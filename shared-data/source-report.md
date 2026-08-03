@@ -6,8 +6,8 @@
 - Products per category: {"running-shoes":12,"sneakers":12,"slides":10,"flip-flops":6,"clogs":10}.
 - Price range: 799.000–3.699.000 VND.
 - Sale products: 0.
-- Downloaded source images: 4.
-- Benchmark placeholders: 46.
+- Downloaded source images: 7.
+- Benchmark placeholders: 43.
 - Benchmark format: WebP, 800×600, contain fit, neutral background, quality 82.
 - Products checksum (SHA-256): `4d8fd2a3c22816566a6c0cae7660cca3c36ab8ec618b81b512d0c3d3f1213160`.
 - Added fields: id, slug, currency, onSale, neutral description, image path, imageAlt, derived Wikimedia file-page sourceUrl, and featured flag.
@@ -33,7 +33,6 @@
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/HK_Fashion_Plastic_Clogs_n_Shoes_n_Colourful_Crocs_Footwear.JPG: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_Sandalias.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_Sandalias_2.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_sandals.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Imitation_Crocs_Sandals.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Women%27s_990_Running_Shoes.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running.JPG: HTTP 429
@@ -44,11 +43,9 @@
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running_shoes.JPG: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_balance_shoe.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Shoes.JPG: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Womens_New_Balance_shoes_%28Unsplash%29.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_running_sneakers_2013-10-06_08-34.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Running_Shoes.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Zoom_elite_2.png: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes_2.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Gym_Shoes_-_Nike_Metcon_%2851080442242%29.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Vintage_Nike_Running_Shoes_at_the_ShoeZeum.jpg: HTTP 429

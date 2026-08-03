@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T09:22:15.366Z",
+  "generatedAt": "2026-08-03T09:50:42.078Z",
   "maxBytes": 20971520,
   "entries": [
     {
@@ -171,11 +171,15 @@
     {
       "slug": "crocs-draft-slide-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_sandals.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Crocs_sandals.jpg",
+      "status": "downloaded",
+      "path": "images/source/crocs-draft-slide-01.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 2069792,
+      "sha256": "70c898f0e1f5dccac4806b74509bb11b7286792b47e8fcf11f3e0865dbe6bdd1",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/crocs-draft-slide-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "crocs-draft-slide-02",
@@ -270,11 +274,15 @@
     {
       "slug": "new-balance-draft-sneaker-03",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Womens_New_Balance_shoes_%28Unsplash%29.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Womens_New_Balance_shoes_%28Unsplash%29.jpg",
+      "status": "downloaded",
+      "path": "images/source/new-balance-draft-sneaker-03.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 5606357,
+      "sha256": "290b17b264139b5e5ba6dcced8e67f0d32f4aca6fcd7f8fc64814975e850712c",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/new-balance-draft-sneaker-03.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "nike-draft-clog-01",
@@ -332,11 +340,15 @@
     {
       "slug": "nike-draft-slide-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Nike_shoes.jpg",
+      "status": "downloaded",
+      "path": "images/source/nike-draft-slide-01.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 1757701,
+      "sha256": "e76556a24e64ec33726de00e14229595af070ad1a72a86bea608c07f3d7d60c0",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/nike-draft-slide-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "nike-draft-slide-02",
