@@ -1,51 +1,51 @@
 name,brand,category,color,price,originalPrice,sourceUrl,sourceImageUrl
-Nike Draft Run 01,NIKE,running-shoes,Đen,2899000,,,
-Nike Draft Run 02,NIKE,running-shoes,Trắng,3199000,,,
-Nike Draft Sneaker 01,NIKE,sneakers,Trắng,2399000,,,
-Nike Draft Sneaker 02,NIKE,sneakers,Xám,2599000,,,
-Nike Draft Slide 01,NIKE,slides,Đen,1099000,,,
-Nike Draft Slide 02,NIKE,slides,Trắng,1199000,,,
-Nike Draft Flip 01,NIKE,flip-flops,Xanh Dương,899000,,,
-Nike Draft Clog 01,NIKE,clogs,Xám,1999000,,,
-Nike Draft Sneaker 03,NIKE,sneakers,Đỏ,2799000,,,
-Nike Draft Run 03,NIKE,running-shoes,Xanh Navy,3499000,,,
-Adidas Draft Run 01,ADIDAS,running-shoes,Trắng,2999000,,,
-Adidas Draft Run 02,ADIDAS,running-shoes,Đen,3299000,,,
-Adidas Draft Sneaker 01,ADIDAS,sneakers,Be,2199000,,,
-Adidas Draft Sneaker 02,ADIDAS,sneakers,Xanh Dương,2499000,,,
-Adidas Draft Slide 01,ADIDAS,slides,Đen,899000,,,
-Adidas Draft Slide 02,ADIDAS,slides,Trắng,999000,,,
-Adidas Draft Flip 01,ADIDAS,flip-flops,Xám,799000,,,
-Adidas Draft Clog 01,ADIDAS,clogs,Xanh Lá,1499000,,,
-Adidas Draft Sneaker 03,ADIDAS,sneakers,Nâu,1999000,,,
-Adidas Draft Run 03,ADIDAS,running-shoes,Tím,2799000,,,
-New Balance Draft Run 01,NEW_BALANCE,running-shoes,Xám,2999000,,,
-New Balance Draft Run 02,NEW_BALANCE,running-shoes,Xanh Navy,3299000,,,
-New Balance Draft Sneaker 01,NEW_BALANCE,sneakers,Trắng,2499000,,,
-New Balance Draft Sneaker 02,NEW_BALANCE,sneakers,Be,2799000,,,
-New Balance Draft Slide 01,NEW_BALANCE,slides,Đen,899000,,,
-New Balance Draft Slide 02,NEW_BALANCE,slides,Xám,999000,,,
-New Balance Draft Flip 01,NEW_BALANCE,flip-flops,Xanh Dương,799000,,,
-New Balance Draft Clog 01,NEW_BALANCE,clogs,Trắng,1599000,,,
-New Balance Draft Sneaker 03,NEW_BALANCE,sneakers,Xanh Lá,2699000,,,
-New Balance Draft Run 03,NEW_BALANCE,running-shoes,Đỏ,3599000,,,
-Crocs Draft Clog 01,CROCS,clogs,Đen,1499000,,,
-Crocs Draft Clog 02,CROCS,clogs,Trắng,1499000,,,
-Crocs Draft Clog 03,CROCS,clogs,Hồng,1599000,,,
-Crocs Draft Clog 04,CROCS,clogs,Xám,2199000,,,
-Crocs Draft Clog 05,CROCS,clogs,Xanh Dương,2299000,,,
-Crocs Draft Slide 01,CROCS,slides,Đen,1199000,,,
-Crocs Draft Slide 02,CROCS,slides,Be,1299000,,,
-Crocs Draft Flip 01,CROCS,flip-flops,Xanh Lá,999000,,,
-Crocs Draft Flip 02,CROCS,flip-flops,Tím,1099000,,,
-Crocs Draft Clog 06,CROCS,clogs,Vàng,1799000,,,
-Puma Draft Run 01,PUMA,running-shoes,Đen,2499000,,,
-Puma Draft Run 02,PUMA,running-shoes,Trắng,2799000,,,
-Puma Draft Run 03,PUMA,running-shoes,Xanh Dương,3699000,,,
-Puma Draft Sneaker 01,PUMA,sneakers,Trắng,2399000,,,
-Puma Draft Sneaker 02,PUMA,sneakers,Xám,2199000,,,
-Puma Draft Slide 01,PUMA,slides,Đen,899000,,,
-Puma Draft Slide 02,PUMA,slides,Đỏ,999000,,,
-Puma Draft Flip 01,PUMA,flip-flops,Xanh Navy,799000,,,
-Puma Draft Clog 01,PUMA,clogs,Be,1499000,,,
-Puma Draft Sneaker 03,PUMA,sneakers,Vàng,2599000,,,
+Nike Draft Run 01,NIKE,running-shoes,Đen,2899000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Running_Shoes_Not_Dissected_Reference.jpg
+Nike Draft Run 02,NIKE,running-shoes,Trắng,3199000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Free%2B_3_running_shoe.jpg
+Nike Draft Sneaker 01,NIKE,sneakers,Trắng,2399000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Cortez_shoes.jpg
+Nike Draft Sneaker 02,NIKE,sneakers,Xám,2599000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Gym_Shoes_-_Nike_Metcon_%2851080442242%29.jpg
+Nike Draft Slide 01,NIKE,slides,Đen,1099000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes.jpg
+Nike Draft Slide 02,NIKE,slides,Trắng,1199000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes_2.jpg
+Nike Draft Flip 01,NIKE,flip-flops,Xanh Dương,899000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Running_Shoes.jpg
+Nike Draft Clog 01,NIKE,clogs,Xám,1999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_running_sneakers_2013-10-06_08-34.jpg
+Nike Draft Sneaker 03,NIKE,sneakers,Đỏ,2799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Vintage_Nike_Running_Shoes_at_the_ShoeZeum.jpg
+Nike Draft Run 03,NIKE,running-shoes,Xanh Navy,3499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Zoom_elite_2.png
+Adidas Draft Run 01,ADIDAS,running-shoes,Trắng,2999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_black_shoes.JPG
+Adidas Draft Run 02,ADIDAS,running-shoes,Đen,3299000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_shoe.JPG
+Adidas Draft Sneaker 01,ADIDAS,sneakers,Be,2199000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Superstar_shoes_pair.jpg
+Adidas Draft Sneaker 02,ADIDAS,sneakers,Xanh Dương,2499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Stan_Smith_wht-blk.jpg
+Adidas Draft Slide 01,ADIDAS,slides,Đen,899000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/An_Adidas_shoe.jpg
+Adidas Draft Slide 02,ADIDAS,slides,Trắng,999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Run_DMC_shoe.jpg
+Adidas Draft Flip 01,ADIDAS,flip-flops,Xám,799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_sneakers_display_-_several_left_shoes.jpg
+Adidas Draft Clog 01,ADIDAS,clogs,Xanh Lá,1499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Conductor_High_Olympics_1988_re-edition_sneakers.jpg
+Adidas Draft Sneaker 03,ADIDAS,sneakers,Nâu,1999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Samba_sneakers%2C_Originals_branch.JPG
+Adidas Draft Run 03,ADIDAS,running-shoes,Tím,2799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Emil_Zatopek_running_shoes_by_Adidas_1948.JPG
+New Balance Draft Run 01,NEW_BALANCE,running-shoes,Xám,2999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1225_Running_Shoes.jpg
+New Balance Draft Run 02,NEW_BALANCE,running-shoes,Xanh Navy,3299000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_-_Trail_More_running_shoes.jpg
+New Balance Draft Sneaker 01,NEW_BALANCE,sneakers,Trắng,2499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/New_balance_shoe.jpg
+New Balance Draft Sneaker 02,NEW_BALANCE,sneakers,Be,2799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Shoes.JPG
+New Balance Draft Slide 01,NEW_BALANCE,slides,Đen,899000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1062.jpg
+New Balance Draft Slide 02,NEW_BALANCE,slides,Xám,999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running_shoes.JPG
+New Balance Draft Flip 01,NEW_BALANCE,flip-flops,Xanh Dương,799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running.JPG
+New Balance Draft Clog 01,NEW_BALANCE,clogs,Trắng,1599000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Women%27s_990_Running_Shoes.jpg
+New Balance Draft Sneaker 03,NEW_BALANCE,sneakers,Xanh Lá,2699000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Womens_New_Balance_shoes_%28Unsplash%29.jpg
+New Balance Draft Run 03,NEW_BALANCE,running-shoes,Đỏ,3599000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_shoes_and_Aorus_football_table_%2852593376310%29.jpg
+Crocs Draft Clog 01,CROCS,clogs,Đen,1499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs-synthetic-clogs.jpg
+Crocs Draft Clog 02,CROCS,clogs,Trắng,1499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_shoe.jpg
+Crocs Draft Clog 03,CROCS,clogs,Hồng,1599000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_with_charms.png
+Crocs Draft Clog 04,CROCS,clogs,Xám,2199000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_crocband_%2834601773801%29.jpg
+Crocs Draft Clog 05,CROCS,clogs,Xanh Dương,2299000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/American_flag_crocs.jpg
+Crocs Draft Slide 01,CROCS,slides,Đen,1199000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_sandals.jpg
+Crocs Draft Slide 02,CROCS,slides,Be,1299000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Imitation_Crocs_Sandals.jpg
+Crocs Draft Flip 01,CROCS,flip-flops,Xanh Lá,999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_Sandalias.jpg
+Crocs Draft Flip 02,CROCS,flip-flops,Tím,1099000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_Sandalias_2.jpg
+Crocs Draft Clog 06,CROCS,clogs,Vàng,1799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/HK_Fashion_Plastic_Clogs_n_Shoes_n_Colourful_Crocs_Footwear.JPG
+Puma Draft Run 01,PUMA,running-shoes,Đen,2499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Jago_Zig_Zag_Running_Shoe.jpg
+Puma Draft Run 02,PUMA,running-shoes,Trắng,2799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Pumashoes.jpg
+Puma Draft Run 03,PUMA,running-shoes,Xanh Dương,3699000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_association_football_shoes.jpg
+Puma Draft Sneaker 01,PUMA,sneakers,Trắng,2399000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Smash_Leather.jpg
+Puma Draft Sneaker 02,PUMA,sneakers,Xám,2199000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Speedcat_OG_Sneakers_PUMA.jpg
+Puma Draft Slide 01,PUMA,slides,Đen,899000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Shoes.JPG
+Puma Draft Slide 02,PUMA,slides,Đỏ,999000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_pink.gif
+Puma Draft Flip 01,PUMA,flip-flops,Xanh Navy,799000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_schuhe.jpg
+Puma Draft Clog 01,PUMA,clogs,Be,1499000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Clyde.jpg
+Puma Draft Sneaker 03,PUMA,sneakers,Vàng,2599000,,,https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Suede.jpg

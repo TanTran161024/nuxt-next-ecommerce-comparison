@@ -14,7 +14,7 @@ The importer stopped immediately after this unsuccessful pagination request. It 
 
 ## Current snapshot status
 
-No sourced 50-product snapshot was created. Creating synthetic records and claiming they were collected from Supersports would be inaccurate. `manual-products-template.csv` now contains 50 clearly labelled draft records (five brands × ten products) for manual completion. Their names, colors, and prices are plausible demo values only; they are not claimed to be collected from Supersports and have no source URLs or source image URLs.
+No sourced 50-product snapshot was created. Creating synthetic records and claiming they were collected from Supersports would be inaccurate. `manual-products-template.csv` contains 50 clearly labelled draft records (five brands × ten products) for manual completion. Their names, colors, and prices are plausible demo values only; they are not claimed to be collected from Supersports. User-supplied public Wikimedia Commons image links were added to `sourceImageUrl`; the user will supply the product `sourceUrl` values.
 
 Before conversion, replace each draft name or price as needed and enter a unique public `sourceUrl` for every record. Then run `npm run convert:manual-data`, `npm run validate:data`, `npm run sync:data`, and `npm run verify:data`.
 
