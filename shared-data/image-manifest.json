@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T10:33:18.682Z",
+  "generatedAt": "2026-08-03T10:35:57.616Z",
   "maxBytes": 20971520,
   "entries": [
     {
@@ -41,9 +41,11 @@
     {
       "slug": "adidas-draft-run-02",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_shoe.JPG",
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Adidas_shoe.JPG",
+      "retryAfterAt": "2026-08-03T10:45:54.587Z",
       "status": "failed",
       "error": "HTTP 429",
-      "attempts": 2,
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-run-02.webp",
       "benchmarkStatus": "placeholder"
     },
@@ -268,11 +270,14 @@
     {
       "slug": "new-balance-draft-slide-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1062.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/new-balance-draft-slide-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 130824,
+      "sha256": "aeb0be6df7567b296318e85f4e60c12b61588368dc0524a3073f5ec9407034c4",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/new-balance-draft-slide-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "new-balance-draft-slide-02",
@@ -286,20 +291,26 @@
     {
       "slug": "new-balance-draft-sneaker-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_balance_shoe.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/new-balance-draft-sneaker-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 692036,
+      "sha256": "4639831fc9aaf17678835038942ddc2d984f7a9f20a006e5032b4307879d4f5d",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/new-balance-draft-sneaker-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "new-balance-draft-sneaker-02",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Shoes.JPG",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/new-balance-draft-sneaker-02.jpg",
+      "contentType": "image/jpg",
+      "bytes": 2251055,
+      "sha256": "fb6ccd0354384b3934d45d138514aaccfcdd2e9246101fc514a4ad1e7090f2ad",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/new-balance-draft-sneaker-02.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "new-balance-draft-sneaker-03",

@@ -6,8 +6,8 @@
 - Products per category: {"running-shoes":12,"sneakers":12,"slides":10,"flip-flops":6,"clogs":10}.
 - Price range: 799.000–3.699.000 VND.
 - Sale products: 0.
-- Downloaded source images: 23.
-- Benchmark placeholders: 27.
+- Downloaded source images: 26.
+- Benchmark placeholders: 24.
 - Benchmark format: WebP, 800×600, contain fit, neutral background, quality 82.
 - Products checksum (SHA-256): `4d8fd2a3c22816566a6c0cae7660cca3c36ab8ec618b81b512d0c3d3f1213160`.
 - Added fields: id, slug, currency, onSale, neutral description, image path, imageAlt, derived Wikimedia file-page sourceUrl, and featured flag.
@@ -29,10 +29,7 @@
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Women%27s_990_Running_Shoes.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running.JPG: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_shoes_and_Aorus_football_table_%2852593376310%29.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1062.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running_shoes.JPG: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/New_balance_shoe.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Shoes.JPG: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Clyde.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_schuhe.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Jago_Zig_Zag_Running_Shoe.jpg: HTTP 429
