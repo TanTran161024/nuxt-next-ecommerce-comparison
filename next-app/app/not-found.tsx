@@ -1,3 +1,2 @@
-export default function NotFound() {
-  return <h1 className="text-2xl font-bold text-slate-900">Page not found</h1>
-}
+import Link from 'next/link'
+export default function NotFound(){return <section className="mx-auto max-w-3xl p-10"><p className="font-bold text-sky-700">404</p><h1 className="mt-2 text-3xl font-bold">Không tìm thấy sản phẩm</h1><p className="mt-3 text-slate-600">Sản phẩm không tồn tại hoặc đã thay đổi.</p><Link className="mt-6 inline-block rounded bg-slate-950 px-4 py-2 text-white" href="/products">Về danh sách sản phẩm</Link></section>}
