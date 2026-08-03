@@ -1,17 +1,27 @@
 [
   {
-    "id": "running-shoes"
+    "value": "running-shoes",
+    "label": "Giày chạy bộ",
+    "productCount": 12
   },
   {
-    "id": "sneakers"
+    "value": "sneakers",
+    "label": "Giày sneaker",
+    "productCount": 12
   },
   {
-    "id": "slides"
+    "value": "slides",
+    "label": "Dép quai ngang",
+    "productCount": 10
   },
   {
-    "id": "flip-flops"
+    "value": "flip-flops",
+    "label": "Dép xỏ ngón",
+    "productCount": 6
   },
   {
-    "id": "clogs"
+    "value": "clogs",
+    "label": "Giày clog",
+    "productCount": 10
   }
 ]

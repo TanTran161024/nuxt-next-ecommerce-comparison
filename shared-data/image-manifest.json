@@ -1,0 +1,479 @@
+{
+  "generatedAt": "2026-08-03T09:22:15.366Z",
+  "maxBytes": 20971520,
+  "entries": [
+    {
+      "slug": "adidas-draft-clog-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Conductor_High_Olympics_1988_re-edition_sneakers.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-clog-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-flip-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_sneakers_display_-_several_left_shoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-flip-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-run-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_black_shoes.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-run-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-run-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_shoe.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-run-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-run-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Emil_Zatopek_running_shoes_by_Adidas_1948.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-run-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-slide-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/An_Adidas_shoe.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-slide-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-slide-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Run_DMC_shoe.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-slide-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-sneaker-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Superstar_shoes_pair.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-sneaker-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-sneaker-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Stan_Smith_wht-blk.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-sneaker-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "adidas-draft-sneaker-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Samba_sneakers%2C_Originals_branch.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/adidas-draft-sneaker-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-clog-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs-synthetic-clogs.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-clog-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-clog-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_shoe.jpg",
+      "status": "failed",
+      "error": "HTTP 404",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-clog-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-clog-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_with_charms.png",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-clog-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-clog-04",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_crocband_%2834601773801%29.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-clog-04.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-clog-05",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/American_flag_crocs.jpg",
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/American_flag_crocs.jpg",
+      "status": "downloaded",
+      "path": "images/source/crocs-draft-clog-05.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 189475,
+      "sha256": "7da09a6a338609cb941d907a56f42c41b5e04ad8e2c0c9017801b4a6560a9003",
+      "attempts": 1,
+      "benchmarkPath": "images/benchmark/crocs-draft-clog-05.webp",
+      "benchmarkStatus": "normalized"
+    },
+    {
+      "slug": "crocs-draft-clog-06",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/HK_Fashion_Plastic_Clogs_n_Shoes_n_Colourful_Crocs_Footwear.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-clog-06.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-flip-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_Sandalias.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-flip-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-flip-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_Sandalias_2.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-flip-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-slide-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_sandals.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-slide-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "crocs-draft-slide-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Imitation_Crocs_Sandals.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/crocs-draft-slide-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-clog-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Women%27s_990_Running_Shoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-clog-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-flip-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-flip-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-run-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1225_Running_Shoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-run-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-run-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_-_Trail_More_running_shoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-run-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-run-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_shoes_and_Aorus_football_table_%2852593376310%29.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-run-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-slide-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1062.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-slide-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-slide-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running_shoes.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-slide-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-sneaker-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_balance_shoe.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-sneaker-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-sneaker-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Shoes.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-sneaker-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "new-balance-draft-sneaker-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Womens_New_Balance_shoes_%28Unsplash%29.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/new-balance-draft-sneaker-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "nike-draft-clog-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_running_sneakers_2013-10-06_08-34.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/nike-draft-clog-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "nike-draft-flip-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Running_Shoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/nike-draft-flip-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "nike-draft-run-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Running_Shoes_Not_Dissected_Reference.jpg",
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Nike_Running_Shoes_Not_Dissected_Reference.jpg",
+      "status": "downloaded",
+      "path": "images/source/nike-draft-run-01.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 773234,
+      "sha256": "1eb0d830ac17ef1c1e5d693b3ee0cb3c0a59e5147faf89be1322019cfcf3f922",
+      "attempts": 1,
+      "benchmarkPath": "images/benchmark/nike-draft-run-01.webp",
+      "benchmarkStatus": "normalized"
+    },
+    {
+      "slug": "nike-draft-run-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Free%2B_3_running_shoe.jpg",
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Nike_Free%2B_3_running_shoe.jpg",
+      "status": "downloaded",
+      "path": "images/source/nike-draft-run-02.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 24799,
+      "sha256": "c8f145571487da5f8a57c87fad8a58f23c732b2def944e4244cbf3200309aff0",
+      "attempts": 1,
+      "benchmarkPath": "images/benchmark/nike-draft-run-02.webp",
+      "benchmarkStatus": "normalized"
+    },
+    {
+      "slug": "nike-draft-run-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zoom_elite_2.png",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/nike-draft-run-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "nike-draft-slide-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/nike-draft-slide-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "nike-draft-slide-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes_2.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/nike-draft-slide-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "nike-draft-sneaker-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Cortez_shoes.jpg",
+      "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Nike_Cortez_shoes.jpg",
+      "status": "downloaded",
+      "path": "images/source/nike-draft-sneaker-01.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 1956031,
+      "sha256": "c9dcc358af92d64f937b026bccfb826ae90be269ca1b570d7c106dc57a807b7c",
+      "attempts": 1,
+      "benchmarkPath": "images/benchmark/nike-draft-sneaker-01.webp",
+      "benchmarkStatus": "normalized"
+    },
+    {
+      "slug": "nike-draft-sneaker-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gym_Shoes_-_Nike_Metcon_%2851080442242%29.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/nike-draft-sneaker-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "nike-draft-sneaker-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Vintage_Nike_Running_Shoes_at_the_ShoeZeum.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/nike-draft-sneaker-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-clog-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Clyde.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-clog-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-flip-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_schuhe.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-flip-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-run-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Jago_Zig_Zag_Running_Shoe.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-run-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-run-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pumashoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-run-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-run-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_association_football_shoes.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-run-03.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-slide-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Shoes.JPG",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-slide-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-slide-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_pink.gif",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-slide-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-sneaker-01",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Smash_Leather.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-sneaker-01.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-sneaker-02",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Speedcat_OG_Sneakers_PUMA.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-sneaker-02.webp",
+      "benchmarkStatus": "placeholder"
+    },
+    {
+      "slug": "puma-draft-sneaker-03",
+      "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Suede.jpg",
+      "status": "failed",
+      "error": "HTTP 429",
+      "attempts": 2,
+      "benchmarkPath": "images/benchmark/puma-draft-sneaker-03.webp",
+      "benchmarkStatus": "placeholder"
+    }
+  ],
+  "benchmark": {
+    "format": "webp",
+    "width": 800,
+    "height": 600,
+    "fit": "contain",
+    "quality": 82
+  }
+}

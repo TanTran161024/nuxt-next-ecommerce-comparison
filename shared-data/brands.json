@@ -1,22 +1,27 @@
 [
   {
-    "id": "NIKE",
-    "name": "NIKE"
+    "value": "NIKE",
+    "label": "Nike",
+    "productCount": 10
   },
   {
-    "id": "ADIDAS",
-    "name": "ADIDAS"
+    "value": "ADIDAS",
+    "label": "Adidas",
+    "productCount": 10
   },
   {
-    "id": "NEW_BALANCE",
-    "name": "NEW BALANCE"
+    "value": "NEW_BALANCE",
+    "label": "New Balance",
+    "productCount": 10
   },
   {
-    "id": "CROCS",
-    "name": "CROCS"
+    "value": "CROCS",
+    "label": "Crocs",
+    "productCount": 10
   },
   {
-    "id": "PUMA",
-    "name": "PUMA"
+    "value": "PUMA",
+    "label": "Puma",
+    "productCount": 10
   }
 ]

@@ -7,11 +7,18 @@
     "npm": "10.9.8"
   },
   "scripts": {
-    "import:data": "node scripts/import-supersports-products.mjs",
-    "validate:data": "node scripts/validate-data.mjs",
-    "sync:data": "node scripts/sync-data.mjs",
-    "verify:data": "node scripts/verify-data.mjs",
-    "convert:manual-data": "node scripts/convert-manual-products.mjs",
+    "data:csv-validate": "node scripts/validate-manual-csv.mjs",
+    "data:convert": "node scripts/convert-manual-products.mjs",
+    "data:validate": "node scripts/validate-data.mjs",
+    "data:download-images": "node scripts/download-product-images.mjs",
+    "data:normalize-images": "node scripts/normalize-product-images.mjs",
+    "data:sync": "node scripts/sync-data.mjs",
+    "data:verify": "node scripts/verify-data.mjs",
+    "data:report": "node scripts/write-data-report.mjs",
+    "data:prepare": "npm run data:csv-validate && npm run data:convert && npm run data:download-images && npm run data:normalize-images && npm run data:validate && npm run data:sync && npm run data:verify && npm run data:report",
     "test:data": "node --test scripts/data-utils.test.mjs"
+  },
+  "devDependencies": {
+    "sharp": "0.35.3"
   }
 }
