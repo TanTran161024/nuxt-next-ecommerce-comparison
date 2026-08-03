@@ -9,6 +9,6 @@
     "color": { "type": "string" }, "price": { "type": "integer", "minimum": 1 },
     "originalPrice": { "type": ["integer", "null"] }, "currency": { "const": "VND" }, "onSale": { "type": "boolean" },
     "description": { "type": "string" }, "image": { "type": "string" }, "sourceImageUrl": { "type": ["string", "null"] },
-    "sourceUrl": { "type": "string", "format": "uri" }, "featured": { "type": "boolean" }, "capturedAt": { "type": "string", "format": "date-time" }
+    "sourceUrl": { "type": ["string", "null"], "format": "uri" }, "featured": { "type": "boolean" }, "capturedAt": { "type": "string", "format": "date-time" }
   }, "additionalProperties": false
 }
