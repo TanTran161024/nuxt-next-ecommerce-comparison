@@ -12,7 +12,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "node -e \"console.log('No automated tests are defined for this initialization stage.')\""
+    "test": "vitest run"
   },
   "dependencies": {
     "next": "16.2.12",
@@ -27,6 +27,7 @@
     "eslint": "9.39.5",
     "eslint-config-next": "16.2.12",
     "tailwindcss": "4.3.3",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
   }
 }

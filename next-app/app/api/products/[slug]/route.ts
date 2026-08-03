@@ -1,0 +1,5 @@
+import { NextRequest, NextResponse } from 'next/server'
+import type { ApiErrorResponse, Product, ProductListItem } from '../../../../types/product'
+import { getProductBySlug, getRelatedProducts } from '../../../../lib/products'
+const item=(p:Product):ProductListItem=>({id:p.id,name:p.name,slug:p.slug,brand:p.brand,category:p.category,color:p.color,price:p.price,originalPrice:p.originalPrice,currency:p.currency,onSale:p.onSale,description:p.description,image:p.image,imageAlt:p.imageAlt,sourceUrl:p.sourceUrl,featured:p.featured})
+export async function GET(_request:NextRequest,context:{params:Promise<{slug:string}>}):Promise<NextResponse<{item:ProductListItem;relatedItems:ProductListItem[]}|ApiErrorResponse>> { const {slug}=await context.params; const product=getProductBySlug(slug); if(!product)return NextResponse.json({statusCode:404,statusMessage:'Product not found',message:'Product not found.'},{status:404}); return NextResponse.json({item:item(product),relatedItems:getRelatedProducts(product).map(item)}) }
