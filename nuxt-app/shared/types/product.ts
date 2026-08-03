@@ -52,6 +52,11 @@ export interface ProductListResponse {
   }
 }
 
+export interface ProductDetailResponse {
+  item: ProductListItem
+  relatedItems: ProductListItem[]
+}
+
 export interface ApiErrorResponse {
   statusCode: number
   statusMessage: string
