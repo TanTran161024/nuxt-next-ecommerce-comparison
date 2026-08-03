@@ -1,5 +1,9 @@
 <template>
-  <main class="mx-auto min-h-screen max-w-3xl px-6 py-16">
-    <slot />
-  </main>
+  <div class="flex min-h-screen flex-col bg-slate-50 text-slate-900">
+    <AppHeader />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <AppFooter />
+  </div>
 </template>
