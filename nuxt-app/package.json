@@ -14,7 +14,7 @@
     "preview": "nuxt preview",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck",
-    "test": "node -e \"console.log('No automated tests are defined for this initialization stage.')\""
+    "test": "vitest run"
   },
   "dependencies": {
     "@pinia/nuxt": "1.0.1",
@@ -27,6 +27,7 @@
     "eslint": "10.8.0",
     "tailwindcss": "4.3.3",
     "typescript": "5.9.3",
+    "vitest": "3.2.4",
     "vue-tsc": "3.3.9"
   }
 }
