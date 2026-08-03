@@ -6,8 +6,8 @@
 - Products per category: {"running-shoes":12,"sneakers":12,"slides":10,"flip-flops":6,"clogs":10}.
 - Price range: 799.000–3.699.000 VND.
 - Sale products: 0.
-- Downloaded source images: 7.
-- Benchmark placeholders: 43.
+- Downloaded source images: 23.
+- Benchmark placeholders: 27.
 - Benchmark format: WebP, 800×600, contain fit, neutral background, quality 82.
 - Products checksum (SHA-256): `4d8fd2a3c22816566a6c0cae7660cca3c36ab8ec618b81b512d0c3d3f1213160`.
 - Added fields: id, slug, currency, onSale, neutral description, image path, imageAlt, derived Wikimedia file-page sourceUrl, and featured flag.
@@ -16,16 +16,8 @@
 
 ## Failed image URLs
 
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Conductor_High_Olympics_1988_re-edition_sneakers.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_sneakers_display_-_several_left_shoes.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_black_shoes.JPG: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_shoe.JPG: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Emil_Zatopek_running_shoes_by_Adidas_1948.JPG: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/An_Adidas_shoe.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Run_DMC_shoe.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Superstar_shoes_pair.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Stan_Smith_wht-blk.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Samba_sneakers%2C_Originals_branch.JPG: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs-synthetic-clogs.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_shoe.jpg: HTTP 404
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocs_with_charms.png: HTTP 429
@@ -36,19 +28,11 @@
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Imitation_Crocs_Sandals.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Women%27s_990_Running_Shoes.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running.JPG: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1225_Running_Shoes.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_-_Trail_More_running_shoes.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_shoes_and_Aorus_football_table_%2852593376310%29.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1062.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Trail_running_shoes.JPG: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_balance_shoe.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_Shoes.JPG: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_running_sneakers_2013-10-06_08-34.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Running_Shoes.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Zoom_elite_2.png: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes_2.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Gym_Shoes_-_Nike_Metcon_%2851080442242%29.jpg: HTTP 429
-- https://commons.wikimedia.org/wiki/Special:Redirect/file/Vintage_Nike_Running_Shoes_at_the_ShoeZeum.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Clyde.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_schuhe.jpg: HTTP 429
 - https://commons.wikimedia.org/wiki/Special:Redirect/file/Puma_Jago_Zig_Zag_Running_Shoe.jpg: HTTP 429

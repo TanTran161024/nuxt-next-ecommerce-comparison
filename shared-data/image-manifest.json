@@ -1,33 +1,42 @@
 {
-  "generatedAt": "2026-08-03T09:50:42.078Z",
+  "generatedAt": "2026-08-03T10:33:18.682Z",
   "maxBytes": 20971520,
   "entries": [
     {
       "slug": "adidas-draft-clog-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Conductor_High_Olympics_1988_re-edition_sneakers.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-clog-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 461559,
+      "sha256": "03bc204953bd94f6e3add3c6e82ac6be2f31481a1b43056679426d8e1dccb6f2",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-clog-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "adidas-draft-flip-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_sneakers_display_-_several_left_shoes.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-flip-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 269845,
+      "sha256": "3a0167690a2856c76926683ee28fe04d8aaf296c3b8994e508c28114070a5672",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-flip-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "adidas-draft-run-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_black_shoes.JPG",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-run-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 1066619,
+      "sha256": "34c03ea3b76cff2425d8ca976dbf012030fdcfa0310e5cae0e70bbd732e4d47e",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-run-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "adidas-draft-run-02",
@@ -41,20 +50,26 @@
     {
       "slug": "adidas-draft-run-03",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Emil_Zatopek_running_shoes_by_Adidas_1948.JPG",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-run-03.jpg",
+      "contentType": "image/jpg",
+      "bytes": 68656,
+      "sha256": "8700537bb8b25966efcc728bd37381c7936c2aea772f07010ca6bad339a61b6a",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-run-03.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "adidas-draft-slide-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/An_Adidas_shoe.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-slide-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 5725600,
+      "sha256": "a94558f88282c6522b90613de040020f07bfec321973913a9712c7bfff169c88",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-slide-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "adidas-draft-slide-02",
@@ -68,29 +83,38 @@
     {
       "slug": "adidas-draft-sneaker-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Superstar_shoes_pair.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-sneaker-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 2973939,
+      "sha256": "8a813139c8f8d431bcf12f52df2ceb854e19c3a317d3d7fc09c06c60ab4f0674",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-sneaker-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "adidas-draft-sneaker-02",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Stan_Smith_wht-blk.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-sneaker-02.jpg",
+      "contentType": "image/jpg",
+      "bytes": 498661,
+      "sha256": "610735f1d1152ebc743b1907ea86ea3e8fe1704819f76d4136572e91d2b7d8ad",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-sneaker-02.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "adidas-draft-sneaker-03",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Adidas_Samba_sneakers%2C_Originals_branch.JPG",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/adidas-draft-sneaker-03.jpg",
+      "contentType": "image/jpg",
+      "bytes": 531023,
+      "sha256": "770a27901acb9fb97ef130185efbb15e6d2043811296e6e817ec825feb624735",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/adidas-draft-sneaker-03.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "crocs-draft-clog-01",
@@ -211,20 +235,26 @@
     {
       "slug": "new-balance-draft-run-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_1225_Running_Shoes.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/new-balance-draft-run-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 727060,
+      "sha256": "1c3bf33c3e45e3e0ea532560ea38ed252eb092f88eb57166deb81c8669bf117f",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/new-balance-draft-run-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "new-balance-draft-run-02",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_Balance_-_Trail_More_running_shoes.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/new-balance-draft-run-02.jpg",
+      "contentType": "image/jpg",
+      "bytes": 1774695,
+      "sha256": "b3294ae66a6084ac77e5dc2f22d628ea4572c640837e01ae38bf087b1eeb68a6",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/new-balance-draft-run-02.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "new-balance-draft-run-03",
@@ -287,20 +317,26 @@
     {
       "slug": "nike-draft-clog-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_running_sneakers_2013-10-06_08-34.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/nike-draft-clog-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 2776620,
+      "sha256": "439997a4c76821cb622394a62138fa9cc43245f6e0f5079d4841d922bcf40576",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/nike-draft-clog-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "nike-draft-flip-01",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_Running_Shoes.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/nike-draft-flip-01.jpg",
+      "contentType": "image/jpg",
+      "bytes": 308164,
+      "sha256": "492844d22a1a2809e85a984212de4e9bc985f7346cbadd77c1317d663c0a05b2",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/nike-draft-flip-01.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "nike-draft-run-01",
@@ -331,11 +367,14 @@
     {
       "slug": "nike-draft-run-03",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zoom_elite_2.png",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/nike-draft-run-03.png",
+      "contentType": "image/png",
+      "bytes": 3179375,
+      "sha256": "10b9d55b11c9bb6b0c708d20b71269ce000d88bd18ea46759be0a42c11253109",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/nike-draft-run-03.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "nike-draft-slide-01",
@@ -353,11 +392,14 @@
     {
       "slug": "nike-draft-slide-02",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nike_shoes_2.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/nike-draft-slide-02.jpg",
+      "contentType": "image/jpg",
+      "bytes": 2944155,
+      "sha256": "a6a971b0c803686590f99cbe52e5dc39c8a57c81703878bf657d091b5c91e935",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/nike-draft-slide-02.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "nike-draft-sneaker-01",
@@ -375,20 +417,26 @@
     {
       "slug": "nike-draft-sneaker-02",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gym_Shoes_-_Nike_Metcon_%2851080442242%29.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/nike-draft-sneaker-02.jpg",
+      "contentType": "image/jpg",
+      "bytes": 9265787,
+      "sha256": "7122323e83d7337e4090209365559bfa0c0b2051922556cd95a13eecf74ae209",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/nike-draft-sneaker-02.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "nike-draft-sneaker-03",
       "sourceImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Vintage_Nike_Running_Shoes_at_the_ShoeZeum.jpg",
-      "status": "failed",
-      "error": "HTTP 429",
-      "attempts": 2,
+      "status": "downloaded",
+      "path": "images/source/nike-draft-sneaker-03.jpg",
+      "contentType": "image/jpg",
+      "bytes": 2334310,
+      "sha256": "7e54c0edde24ea406137f19ef146a91b3c3e6a05b0ccce12ef2488c22734470e",
+      "attempts": 1,
       "benchmarkPath": "images/benchmark/nike-draft-sneaker-03.webp",
-      "benchmarkStatus": "placeholder"
+      "benchmarkStatus": "normalized"
     },
     {
       "slug": "puma-draft-clog-01",
