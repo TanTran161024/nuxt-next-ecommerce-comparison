@@ -1,7 +1,1 @@
-<template>
-  <footer class="border-t border-slate-200 bg-white">
-    <div class="mx-auto max-w-7xl px-4 py-6 text-sm text-slate-600 sm:px-6 lg:px-8">
-      Website demo phục vụ nghiên cứu so sánh Nuxt và Next.js.
-    </div>
-  </footer>
-</template>
+<template><footer class="mt-12 border-t border-[var(--color-border)] bg-white"><div class="site-container grid gap-6 py-8 text-sm text-[var(--color-text-muted)] sm:grid-cols-2"><div><p class="font-bold text-[var(--color-text)]">Bước Chân Demo</p><p class="mt-2 max-w-md">Website được xây dựng phục vụ nghiên cứu và so sánh Nuxt.js với Next.js.</p></div><div class="sm:text-right"><nav class="flex flex-wrap gap-4 sm:justify-end"><NuxtLink to="/">Trang chủ</NuxtLink><NuxtLink to="/products">Sản phẩm</NuxtLink><NuxtLink to="/cart">Giỏ hàng</NuxtLink></nav><p class="mt-3">Nuxt.js và Next.js · {{ new Date().getFullYear() }}</p></div></div></footer></template>

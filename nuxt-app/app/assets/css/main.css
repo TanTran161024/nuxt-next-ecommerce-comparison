@@ -1,5 +1,11 @@
 @import "tailwindcss";
+@import "./tokens.css";
 
 html {
   color-scheme: light;
 }
+
+body { background:var(--color-background); color:var(--color-text); font-family:var(--font-family-base); }
+button, a, select, input { min-height:44px; }
+.site-container { width:min(calc(100% - 2rem), var(--container-width)); margin-inline:auto; }
+.ui-card { border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface); box-shadow:var(--shadow-sm); }

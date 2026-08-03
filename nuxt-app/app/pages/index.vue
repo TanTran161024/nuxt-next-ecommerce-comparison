@@ -1,60 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import type { ProductListResponse } from '../../shared/types/product'
-
-useSeoMeta({
-  title: 'Bước Chân Demo | Giày dép phục vụ nghiên cứu',
-  description: 'Website giày dép demo phục vụ nghiên cứu so sánh Nuxt và Next.js.',
-  ogTitle: 'Bước Chân Demo',
-  ogDescription: 'Khám phá danh sách giày dép demo cho nghiên cứu framework web.',
-  ogType: 'website',
-})
-
-const { data, error } = await useAsyncData('home-products', () =>
-  $fetch<ProductListResponse>('/api/products'),
-)
-
+useSeoMeta({ title: 'Bước Chân Demo | Giày dép phục vụ nghiên cứu', description: 'Website giày dép demo phục vụ nghiên cứu so sánh Nuxt và Next.js.', ogTitle: 'Bước Chân Demo', ogDescription: 'Khám phá danh sách giày dép demo cho nghiên cứu framework web.', ogType: 'website' })
+const { data, error } = await useAsyncData('home-products', () => $fetch<ProductListResponse>('/api/products'))
 const featuredProducts = computed(() => data.value?.items.filter((product) => product.featured) ?? [])
 const brands = computed(() => data.value?.availableBrands ?? [])
 const categories = computed(() => data.value?.availableCategories ?? [])
 </script>
-
-<template>
-  <div>
-    <section class="bg-slate-950 text-white">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <p class="text-sm font-bold uppercase tracking-[0.2em] text-sky-300">Nuxt 4.5.1 demo</p>
-        <h1 class="mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">Giày dép demo cho nghiên cứu framework</h1>
-        <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-300">Một danh mục sản phẩm dùng chung dữ liệu để minh họa trải nghiệm thương mại điện tử giữa Nuxt và Next.js.</p>
-        <NuxtLink class="mt-8 inline-flex rounded-md bg-sky-400 px-5 py-3 font-semibold text-slate-950 hover:bg-sky-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" to="/products">
-          Xem tất cả sản phẩm
-        </NuxtLink>
-      </div>
-    </section>
-
-    <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-950">Thương hiệu có trong dữ liệu</h2>
-      <ul class="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-        <li v-for="brand in brands" :key="brand.value" class="rounded-lg border border-slate-200 bg-white p-4 text-center text-sm font-semibold text-slate-800">
-          {{ brand.label }} <span class="font-normal text-slate-500">({{ brand.productCount }})</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
-      <div class="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-[0.16em] text-sky-700">Nổi bật</p>
-          <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Sản phẩm featured</h2>
-        </div>
-        <NuxtLink class="rounded text-sm font-semibold text-sky-700 hover:text-sky-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-600" to="/products">Xem danh sách đầy đủ</NuxtLink>
-      </div>
-
-      <ProductGridSkeleton v-if="!data && !error" class="mt-6" />
-      <div v-else-if="error" class="mt-6 rounded-xl border border-rose-200 bg-rose-50 p-6 text-rose-800">
-        Không thể tải sản phẩm featured. Vui lòng thử lại sau.
-      </div>
-      <ProductGrid v-else :categories="categories" :products="featuredProducts" class="mt-6" />
-    </section>
-  </div>
-</template>
+<template><div><section class="border-b border-[var(--color-border)] bg-white"><div class="site-container grid gap-8 py-10 lg:grid-cols-[1.1fr_.9fr] lg:py-16"><div class="flex flex-col justify-center"><p class="text-sm font-bold uppercase tracking-[.16em] text-[var(--color-primary)]">Bộ sưu tập demo</p><h1 class="mt-4 max-w-xl text-4xl font-black tracking-tight sm:text-5xl">Giày thể thao cho những trải nghiệm web rõ ràng.</h1><p class="mt-5 max-w-xl text-lg leading-8 text-[var(--color-text-muted)]">Khám phá 50 sản phẩm trong cùng một bộ dữ liệu để quan sát cách Nuxt.js và Next.js xây dựng trải nghiệm thương mại điện tử.</p><NuxtLink class="mt-7 inline-flex w-fit items-center rounded-[var(--radius-sm)] bg-[var(--color-primary)] px-5 py-3 font-semibold text-white hover:bg-[var(--color-primary-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-focus)]" to="/products">Khám phá sản phẩm</NuxtLink></div><div class="ui-card overflow-hidden bg-[var(--color-surface-muted)] p-4"><img v-if="featuredProducts[0]" :alt="featuredProducts[0].imageAlt" :src="featuredProducts[0].image" class="aspect-[4/3] w-full rounded-[var(--radius-sm)] object-cover"><div v-else class="aspect-[4/3] animate-pulse rounded-[var(--radius-sm)] bg-slate-200" /></div></div></section><section class="site-container py-12"><div><p class="text-sm font-bold uppercase tracking-[.16em] text-[var(--color-primary)]">Thương hiệu</p><h2 class="mt-2 text-3xl font-black tracking-tight">Năm thương hiệu, một bộ dữ liệu chung</h2></div><ul class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5"><li v-for="brand in brands" :key="brand.value"><NuxtLink :to="`/products?brand=${encodeURIComponent(brand.value)}`" class="ui-card block p-5 transition hover:border-[var(--color-primary)] hover:shadow-md"><span class="text-lg font-black tracking-wide">{{ brand.label }}</span><span class="mt-2 block text-sm text-[var(--color-text-muted)]">{{ brand.productCount }} sản phẩm</span></NuxtLink></li></ul></section><section class="site-container py-8"><div class="flex flex-wrap items-end justify-between gap-4"><div><p class="text-sm font-bold uppercase tracking-[.16em] text-[var(--color-primary)]">Nổi bật</p><h2 class="mt-2 text-3xl font-black tracking-tight">Sản phẩm featured</h2></div><NuxtLink class="font-semibold text-[var(--color-primary)] hover:underline" to="/products">Xem tất cả</NuxtLink></div><ProductGridSkeleton v-if="!data && !error" class="mt-6"/><div v-else-if="error" class="ui-card mt-6 p-6 text-[var(--color-danger)]">Không thể tải sản phẩm featured. Vui lòng thử lại sau.</div><ProductGrid v-else :categories="categories" :products="featuredProducts" class="mt-6"/></section><section class="site-container py-12"><h2 class="text-2xl font-black tracking-tight">Khám phá theo loại</h2><div class="mt-5 flex flex-wrap gap-3"><NuxtLink v-for="category in categories" :key="category.value" :to="`/products?category=${encodeURIComponent(category.value)}`" class="rounded-full border border-[var(--color-border)] bg-white px-4 py-2 text-sm font-semibold hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]">{{ category.label }}</NuxtLink></div></section><section class="site-container pb-12"><div class="ui-card bg-[var(--color-surface-muted)] p-6 sm:p-8"><h2 class="text-xl font-black">Dự án nghiên cứu framework</h2><p class="mt-2 max-w-3xl text-[var(--color-text-muted)]">Website được xây dựng phục vụ nghiên cứu và so sánh Nuxt.js với Next.js.</p></div></section></div></template>
