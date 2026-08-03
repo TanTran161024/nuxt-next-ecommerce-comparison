@@ -1,3 +1,3 @@
-export default function ProductsPage() {
-  return <h1 className="text-2xl font-bold text-slate-900">Products placeholder</h1>
-}
+import { ProductFilters } from '../../components/product/ProductFilters'; import { ProductGrid } from '../../components/product/ProductGrid'; import { filterProducts,getAvailableFilters,parseProductFilters } from '../../lib/products'
+type ProductsPageProps={searchParams:Promise<{brand?:string|string[];category?:string|string[];color?:string|string[];minPrice?:string|string[];maxPrice?:string|string[]}>}
+export default async function ProductsPage({searchParams}:ProductsPageProps){const query=await searchParams;const filters=parseProductFilters(query);const available=getAvailableFilters();const products=filterProducts(filters);return <section className="mx-auto max-w-7xl px-4 py-10"><h1 className="text-3xl font-bold">Sản phẩm giày dép demo</h1><ProductFilters brands={available.brands} categories={available.categories} colors={available.colors}/><p className="my-6">Tìm thấy <b>{products.length}</b> sản phẩm</p>{products.length?<ProductGrid products={products} categories={available.categories}/>:<p className="rounded border bg-white p-8">Không tìm thấy sản phẩm.</p>}</section>}

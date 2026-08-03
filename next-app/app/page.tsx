@@ -1,9 +1,2 @@
-export default function HomePage() {
-  return (
-    <section className="space-y-4">
-      <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">Next.js 16.2.12</p>
-      <h1 className="text-4xl font-bold tracking-tight text-slate-900">Shoe shop comparison</h1>
-      <p className="max-w-xl text-lg text-slate-600">Placeholder application for the Next.js implementation.</p>
-    </section>
-  )
-}
+import Link from 'next/link'; import { getAllProducts,getAvailableFilters } from '../lib/products'; import { ProductGrid } from '../components/product/ProductGrid'
+export default function HomePage(){const f=getAvailableFilters();const featured=getAllProducts().filter(x=>x.featured);return <><section className="bg-slate-950 px-4 py-20 text-white"><div className="mx-auto max-w-7xl"><p className="font-bold text-sky-300">Next.js 16.2.12 demo</p><h1 className="mt-3 text-4xl font-bold">Giày dép demo cho nghiên cứu framework</h1><p className="mt-4 text-slate-300">Danh mục dùng chung dữ liệu với Nuxt.</p><Link className="mt-6 inline-block rounded bg-sky-400 px-4 py-2 text-slate-950" href="/products">Xem tất cả sản phẩm</Link></div></section><section className="mx-auto max-w-7xl px-4 py-12"><h2 className="text-2xl font-bold">Sản phẩm featured</h2><ProductGrid products={featured} categories={f.categories}/></section></>}
