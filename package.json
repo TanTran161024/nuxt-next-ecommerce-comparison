@@ -1,0 +1,17 @@
+{
+  "name": "nuxt-next-ecommerce-comparison",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22 <23",
+    "npm": "10.9.8"
+  },
+  "scripts": {
+    "import:data": "node scripts/import-supersports-products.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "sync:data": "node scripts/sync-data.mjs",
+    "verify:data": "node scripts/verify-data.mjs",
+    "convert:manual-data": "node scripts/convert-manual-products.mjs",
+    "test:data": "node --test scripts/data-utils.test.mjs"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "name", "slug", "brand", "category", "color", "price", "originalPrice", "currency", "onSale", "description", "image", "sourceImageUrl", "sourceUrl", "featured", "capturedAt"],
+  "properties": {
+    "id": { "type": "string" }, "name": { "type": "string" }, "slug": { "type": "string" },
+    "brand": { "enum": ["NIKE", "ADIDAS", "NEW_BALANCE", "CROCS", "PUMA", "ASICS", "HOKA"] },
+    "category": { "enum": ["running-shoes", "sneakers", "slides", "flip-flops", "clogs"] },
+    "color": { "type": "string" }, "price": { "type": "integer", "minimum": 1 },
+    "originalPrice": { "type": ["integer", "null"] }, "currency": { "const": "VND" }, "onSale": { "type": "boolean" },
+    "description": { "type": "string" }, "image": { "type": "string" }, "sourceImageUrl": { "type": ["string", "null"] },
+    "sourceUrl": { "type": "string", "format": "uri" }, "featured": { "type": "boolean" }, "capturedAt": { "type": "string", "format": "date-time" }
+  }, "additionalProperties": false
+}

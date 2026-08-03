@@ -1,0 +1,12 @@
+{
+  "status": "manual-input-required",
+  "attemptedAt": "2026-08-03",
+  "source": "https://supersports.com.vn",
+  "collectionUrls": [
+    "https://supersports.com.vn/collections/giay-dep-nam",
+    "https://supersports.com.vn/collections/nike"
+  ],
+  "robotsUrl": "https://supersports.com.vn/robots.txt",
+  "termsUrl": "https://supersports.com.vn/pages/dieu-khoan-va-dieu-kien",
+  "reason": "Nike collection pagination returned HTTP 500 after seven eligible products were found on the first public page."
+}
