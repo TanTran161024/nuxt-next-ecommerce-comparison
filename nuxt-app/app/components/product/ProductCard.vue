@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import type { ProductListItem } from '../../../shared/types/product'
 import { formatVnd, hasOriginalPrice } from '../../utils/product-presentation'
+import { useCartStore } from '../../stores/cart'
 
 defineProps<{
   product: ProductListItem
   categoryLabel: string
 }>()
+const cart=useCartStore()
 </script>
 
 <template>
@@ -25,5 +27,6 @@ defineProps<{
         </div>
       </div>
     </NuxtLink>
+    <button class="m-4 rounded bg-slate-950 px-3 py-2 text-sm text-white" @click="cart.add({productId:product.id,slug:product.slug,name:product.name,brand:product.brand,image:product.image,imageAlt:product.imageAlt,price:product.price})">Thêm vào giỏ</button>
   </article>
 </template>

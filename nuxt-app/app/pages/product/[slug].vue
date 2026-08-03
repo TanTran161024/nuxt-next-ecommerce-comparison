@@ -4,10 +4,12 @@ import categoriesData from '#shared/data/categories.json'
 import type { Category, ProductDetailResponse } from '../../../shared/types/product'
 import { hasOriginalPrice, formatVnd } from '../../utils/product-presentation'
 import { productPageDescription, productPageTitle } from '../../utils/product-metadata'
+import { useCartStore } from '../../stores/cart'
 
 const route = useRoute()
 const slug = computed(() => (typeof route.params.slug === 'string' ? route.params.slug : ''))
 const categories = categoriesData as Category[]
+const cart = useCartStore()
 
 const isNotFoundError = (value: unknown): boolean =>
   typeof value === 'object' && value !== null && 'statusCode' in value && value.statusCode === 404
@@ -69,6 +71,7 @@ const retry = (): void => {
             <del v-if="hasOriginalPrice(product.originalPrice)" class="text-slate-500">{{ formatVnd(product.originalPrice) }}</del>
             <span v-if="product.onSale" class="rounded-full bg-rose-100 px-3 py-1 text-sm font-bold text-rose-700">Đang giảm giá</span>
           </div>
+          <button class="mt-6 rounded bg-slate-950 px-4 py-2 font-semibold text-white hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600" type="button" @click="cart.add({ productId: product.id, slug: product.slug, name: product.name, brand: product.brand, image: product.image, imageAlt: product.imageAlt, price: product.price })">Thêm vào giỏ</button>
           <p class="mt-7 leading-7 text-slate-700">{{ product.description }}</p>
         </div>
       </div>

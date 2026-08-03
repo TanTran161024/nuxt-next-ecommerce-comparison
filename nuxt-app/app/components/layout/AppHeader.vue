@@ -12,7 +12,9 @@
         <NuxtLink class="rounded px-2 py-1 hover:text-sky-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600" to="/products">
           Sản phẩm
         </NuxtLink>
+        <NuxtLink to="/cart">Giỏ hàng<span v-if="cart.hydrated"> ({{cart.count}})</span></NuxtLink>
       </nav>
     </div>
   </header>
 </template>
+<script setup lang="ts">import { onMounted } from 'vue';import { useCartStore } from '../../stores/cart';const cart=useCartStore();onMounted(cart.hydrate)</script>
