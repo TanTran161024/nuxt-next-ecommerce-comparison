@@ -1,0 +1,69 @@
+THÔNG TIN BỔ SUNG CHO MỤC 4.1
+
+Thời điểm tổng hợp: 04/08/2026
+
+1. Môi trường phần cứng
+
+Hệ điều hành: Microsoft Windows 11 Home Single Language
+Phiên bản/build: 10.0.26200 / 26200
+Kiến trúc: 64-bit
+CPU: AMD Ryzen 5 5500U with Radeon Graphics
+Số nhân: 6
+Số luồng: 12
+RAM: 7.33 GiB (7,866,081,280 byte; xấp xỉ 8 GB)
+Loại ổ đĩa: SSD KIOXIA KBG40ZNV256G
+Dung lượng: 256,060,514,304 byte (xấp xỉ 256 GB)
+Dung lượng còn trống: 15,770,726,400 byte (xấp xỉ 15.77 GB) trên ổ C:
+Độ phân giải màn hình: 1366 x 768 px
+Múi giờ: SE Asia Standard Time (UTC+07:00, Bangkok/Hà Nội/Jakarta)
+Ngày thực nghiệm: 04/08/2026
+
+2. Runtime
+
+Node.js: 24.15.0
+npm: 11.12.1
+Git: 2.46.2.windows.1
+Trình duyệt: Google Chrome
+Phiên bản trình duyệt: 150.0.7871.187
+Cách chạy Lighthouse:
+Phiên bản Lighthouse:
+
+3. Cấu hình chạy
+
+Lệnh build Nuxt: npm run build
+Lệnh production Nuxt: npm run preview
+Cổng Nuxt:
+
+Lệnh build Next: npm run build
+Lệnh production Next: npm run start
+Cổng Next:
+
+4. Điều kiện thực nghiệm
+
+Chế độ chạy:
+Viewport desktop:
+Viewport tablet:
+Viewport mobile:
+Cache:
+Network throttling:
+CPU throttling:
+Số lần chạy:
+Route đo:
+Slug dùng chung: nike-draft-run-01
+Ảnh local: Có — WebP 800 x 600, chất lượng 82, cùng tài nguyên cục bộ được đồng bộ cho cả hai ứng dụng.
+Dữ liệu cố định: Có — shared-data/products.json, snapshot 50 sản phẩm dùng chung.
+Ứng dụng nền:
+Extension trình duyệt:
+
+5. Mốc mã nguồn
+
+Repository: https://github.com/TanTran161024/nuxt-next-ecommerce-comparison.git
+Branch: main
+Commit: 57c31dd93575396a00ba10b5d5b7569c95628c97
+Ngày chốt: 04/08/2026 06:27:17 (UTC+07:00)
+Working tree: sạch (không có thay đổi chưa commit tại thời điểm tổng hợp)
+
+Ghi chú:
+- Phiên bản khóa được ghi trong dự án là Node.js 22.23.2 và npm 10.9.8. Chúng khác với runtime đang chạy tại thời điểm tổng hợp (Node.js 24.15.0 và npm 11.12.1), nên cần chuyển lại đúng bản khóa trước khi thực nghiệm chính thức.
+- Chưa tìm thấy cấu hình, lệnh chạy hoặc kết quả Lighthouse trong repository; các trường liên quan được giữ trống.
+- Cổng production không được khai báo riêng trong script/package configuration, vì vậy được để trống thay vì suy đoán cổng mặc định.
