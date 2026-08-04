@@ -3,10 +3,9 @@ import './globals.css'
 import { AppFooter } from '../components/layout/AppFooter'
 import { AppHeader } from '../components/layout/AppHeader'
 import { CartProvider } from '../components/cart/CartProvider'
+import { homeMetadata } from '../lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'Bước Chân Demo | Giày dép phục vụ nghiên cứu', description: 'Website giày dép demo phục vụ nghiên cứu so sánh Nuxt và Next.js.',
-}
+export const metadata: Metadata = homeMetadata
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

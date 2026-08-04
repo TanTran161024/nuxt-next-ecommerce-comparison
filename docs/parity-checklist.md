@@ -55,3 +55,16 @@ Script dùng `shared-data/products.json` làm nguồn chuẩn, xác nhận schem
 ## Kết luận
 
 Tính tương đương dữ liệu, route, API, lọc và các trạng thái lõi đạt yêu cầu. Có hai chênh lệch metadata cần được ghi nhận: Next chưa có metadata riêng cho danh sách, còn Nuxt chưa có metadata 404 riêng cho slug không tồn tại. Không có sửa đổi giao diện lớn hay số liệu Lighthouse trong giai đoạn này.
+
+## Cập nhật metadata — Đã khắc phục (2026-08-04)
+
+Phần này giữ nguyên lịch sử ghi nhận phía trên và thay thế kết luận của hai mục metadata sau khi đã có test và production build xác nhận.
+
+| Mã kiểm tra | Nội dung | Kết quả Nuxt | Kết quả Next | Có tương đương hay không | Bằng chứng | Ghi chú |
+| --- | --- | --- | --- | --- | --- | --- |
+| META-01-R | Metadata trang chủ | `homePageMetadata` được dùng bởi `/` | `homeMetadata` được dùng bởi root layout | Có | Hai test metadata đều pass; title/description cùng mục đích trang chủ. | Không thay đổi hành vi trang chủ. |
+| META-02-R | Metadata `/products` | Title/description danh sách sản phẩm | `productsPageMetadata` được export bởi `app/products/page.tsx` | Có | Test Nuxt/Next xác nhận metadata list khác homepage; lint, typecheck, test và build pass. | Đã khắc phục chênh lệch META-02 cũ; Next vẫn là Server Component. |
+| META-03-R | Metadata chi tiết hợp lệ | Title chứa tên product, description từ product | `productMetadata` dùng bởi `generateMetadata` | Có | Test Nuxt/Next xác nhận title chứa tên và description đúng snapshot. | Giữ metadata động theo product. |
+| META-04-R | Metadata và HTTP 404 cho slug không tồn tại | `app/error.vue` đặt title/description 404; route handler trả 404 | `productNotFoundMetadata`; API route trả HTTP 404 | Có | Test route Nuxt và Next xác nhận 404; test metadata xác nhận không chứa metadata product hợp lệ. | Đã khắc phục chênh lệch META-04 cũ, không đổi giao diện 404. |
+
+Kết luận cập nhật: cả hai chênh lệch metadata đã được khắc phục. Không chạy Lighthouse hay đo hiệu năng.

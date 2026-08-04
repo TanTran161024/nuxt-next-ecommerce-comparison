@@ -1,7 +1,18 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
+import {
+  productNotFoundPageDescription,
+  productNotFoundPageTitle,
+} from './utils/product-metadata'
 
-defineProps<{ error: NuxtError }>()
+const props = defineProps<{ error: NuxtError }>()
+
+useSeoMeta({
+  title: () => props.error.statusCode === 404 ? productNotFoundPageTitle : 'Đã xảy ra lỗi | Bước Chân Demo',
+  description: () => props.error.statusCode === 404
+    ? productNotFoundPageDescription
+    : 'Vui lòng thử lại hoặc quay về danh sách sản phẩm.',
+})
 </script>
 
 <template>

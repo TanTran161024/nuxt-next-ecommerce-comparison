@@ -6,7 +6,6 @@ Repository này phục vụ tiểu luận “Nghiên cứu framework Nuxt JS và
 
 Phạm vi lõi chỉ gồm: trang chủ đơn giản; danh sách sản phẩm; lọc theo danh mục, giá, màu; chi tiết theo slug; sản phẩm liên quan; API danh sách và chi tiết; metadata tĩnh/động; loading, error, empty state, 404; responsive; production build; kiểm thử và Lighthouse.
 
-Giỏ hàng chỉ triển khai sau khi phần lõi ổn định. Đặt hàng mô phỏng là phần mở rộng riêng của Nuxt. Không đưa Stripe, email, wishlist, review, vận chuyển, mã giảm giá, dashboard hoặc admin vào phạm vi lõi.
 
 ## Phiên bản và môi trường khóa
 

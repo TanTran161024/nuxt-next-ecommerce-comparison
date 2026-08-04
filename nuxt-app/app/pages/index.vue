@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import type { ProductListResponse } from '../../shared/types/product'
-useSeoMeta({ title: 'Bước Chân Demo | Giày dép phục vụ nghiên cứu', description: 'Website giày dép demo phục vụ nghiên cứu so sánh Nuxt và Next.js.', ogTitle: 'Bước Chân Demo', ogDescription: 'Khám phá danh sách giày dép demo cho nghiên cứu framework web.', ogType: 'website' })
+import { homePageMetadata } from '../utils/product-metadata'
+useSeoMeta(homePageMetadata)
 const { data, error } = await useAsyncData('home-products', () => $fetch<ProductListResponse>('/api/products'))
 const featuredProducts = computed(() => data.value?.items.filter((product) => product.featured) ?? [])
 const brands = computed(() => data.value?.availableBrands ?? [])

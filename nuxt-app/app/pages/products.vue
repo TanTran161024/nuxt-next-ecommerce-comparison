@@ -2,8 +2,9 @@
 import { computed, watch } from 'vue'
 import type { ProductFilters, ProductListResponse } from '../../shared/types/product'
 import { filtersToQuery, normalizeProductQuery } from '../utils/product-filters'
+import { productsPageMetadata } from '../utils/product-metadata'
 import { useProductStore } from '../stores/product'
-useSeoMeta({ title: 'Sản phẩm | Bước Chân Demo', description: 'Danh sách giày dép demo với bộ lọc thương hiệu, loại, màu sắc và giá.' })
+useSeoMeta(productsPageMetadata)
 const route = useRoute(); const router = useRouter(); const productStore = useProductStore(); const apiQuery = computed(() => normalizeProductQuery(route.query))
 watch(() => route.query, (query) => productStore.restoreFiltersFromQuery(query), { immediate: true })
 const { data, error, status, refresh } = await useAsyncData<ProductListResponse>('product-list', () => $fetch('/api/products', { query: apiQuery.value }), { watch: [apiQuery] })

@@ -17,7 +17,8 @@
     "data:report": "node scripts/write-data-report.mjs",
     "data:prepare": "npm run data:csv-validate && npm run data:convert && npm run data:download-images && npm run data:normalize-images && npm run data:validate && npm run data:sync && npm run data:verify && npm run data:report",
     "test:data": "node --test scripts/data-utils.test.mjs",
-    "test:parity-snapshot": "node scripts/check-snapshot-integrity.mjs"
+    "test:parity-snapshot": "node scripts/check-snapshot-integrity.mjs",
+    "experimental:summarize": "node scripts/summarize-experimental-results.mjs"
   },
   "devDependencies": {
     "sharp": "0.35.3"

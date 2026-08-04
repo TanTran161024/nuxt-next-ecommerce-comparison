@@ -6,6 +6,7 @@ import categories from '../../../data/categories.json'
 import { ProductGrid } from '../../../components/product/ProductGrid'
 import { getProductBySlug, getRelatedProducts } from '../../../lib/products'
 import { CartButton } from '../../../components/cart/CartButton'
+import { productMetadata, productNotFoundMetadata } from '../../../lib/metadata'
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>
@@ -16,8 +17,8 @@ const money = (value: number) => new Intl.NumberFormat('vi-VN', { style: 'curren
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params
   const product = findProduct(slug)
-  if (!product) return { title: 'Không tìm thấy sản phẩm | Bước Chân Demo' }
-  return { title: `${product.name} | ${product.brand} | Bước Chân Demo`, description: product.description, openGraph: { title: `${product.name} | ${product.brand}`, description: product.description, images: [product.image] } }
+  if (!product) return productNotFoundMetadata
+  return productMetadata(product)
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
