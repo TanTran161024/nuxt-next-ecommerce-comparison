@@ -1,11 +1,14 @@
-import { existsSync, renameSync } from 'node:fs'
+import { existsSync, mkdtempSync, renameSync, rmSync } from 'node:fs'
 import { spawn } from 'node:child_process'
 import { resolve } from 'node:path'
 import { appendCsv, ensureDirectory, experimentRoot, isPlaceholder, now, readConfig, root, runCommand, shellArguments, shellCommand, writeText } from './experiment-utils.mjs'
+import { lighthouseConfigurationErrors, lighthouseFlags } from './lighthouse-benchmark-options.mjs'
 
 const config = readConfig()
 const pending = Object.entries(config.lighthouse).filter(([, value]) => isPlaceholder(value)).map(([key]) => key)
 if (pending.length) throw new Error(`Lighthouse is blocked until confirmed: ${pending.join(', ')}`)
+const configurationErrors = lighthouseConfigurationErrors(config.lighthouse)
+if (configurationErrors.length) throw new Error(`Invalid Lighthouse configuration: ${configurationErrors.join('; ')}`)
 const lighthouseCheck = await runCommand({ command: process.platform === 'win32' ? 'where lighthouse.cmd || where lighthouse' : 'command -v lighthouse' })
 const localLighthouse = [
   resolve(root, 'node_modules/.bin/lighthouse.cmd'),
@@ -56,8 +59,10 @@ for (let run = 1; run <= config.runsPerCase; run += 1) {
         ensureDirectory(reportDirectory)
         const reportBaseName = existsSync(resolve(reportDirectory, `${baseName}.report.json`)) ? `${baseName}-${Date.now()}` : baseName
         const basePath = resolve(reportDirectory, reportBaseName)
-        const command = `${lighthouseExecutable} http://127.0.0.1:${item.port}${page.path} --output json --output html --output-path "${basePath}"`
+        const profileDirectory = mkdtempSync(resolve(experimentRoot, '.lighthouse-profile-'))
+        const command = `${lighthouseExecutable} http://127.0.0.1:${item.port}${page.path} ${lighthouseFlags(config.lighthouse, profileDirectory).join(' ')} --output json --output html --output-path "${basePath}"`
         const measured = await runCommand({ command })
+        rmSync(profileDirectory, { recursive: true, force: true })
         const logPath = reservePath(reportDirectory, `${baseName}.log`, 'txt')
         writeText(logPath, `${measured.stdout}${measured.stderr}`)
         if (measured.exitCode !== 0) throw new Error(`Lighthouse failed for ${framework}/${page.name}; log: ${logPath}`)

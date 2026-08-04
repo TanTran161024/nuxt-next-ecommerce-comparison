@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { configPath, experimentRoot, isPlaceholder, readConfig, root, runCommand } from './experiment-utils.mjs'
+import { lighthouseConfigurationErrors } from './lighthouse-benchmark-options.mjs'
 
 const config = readConfig()
 const checks = []
@@ -37,7 +38,8 @@ const localLighthouse = [
 ].find(existsSync)
 add('Lighthouse CLI', lighthouse.exitCode === 0 || Boolean(localLighthouse), lighthouse.stdout.trim() || localLighthouse || 'not found locally or on PATH; did not install')
 const lighthousePlaceholders = Object.entries(config.lighthouse).filter(([, value]) => isPlaceholder(value)).map(([key]) => key)
-add('Lighthouse configuration', lighthousePlaceholders.length === 0, lighthousePlaceholders.length ? `requires confirmation: ${lighthousePlaceholders.join(', ')}` : 'complete')
+const lighthouseErrors = lighthousePlaceholders.length ? [`requires confirmation: ${lighthousePlaceholders.join(', ')}`] : lighthouseConfigurationErrors(config.lighthouse)
+add('Lighthouse configuration', lighthouseErrors.length === 0, lighthouseErrors.length ? lighthouseErrors.join('; ') : 'complete')
 add('Benchmark config', existsSync(configPath), configPath)
 
 const hardBlockers = checks.filter((check) => ['Node.js', 'npm', 'Git working tree'].includes(check.name) && !check.passed)

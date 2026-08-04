@@ -23,9 +23,9 @@
     { "name": "product-detail", "path": "/product/nike-draft-run-01" }
   ],
   "lighthouse": {
-    "preset": "[USER_CONFIRMATION_REQUIRED]",
-    "cachePolicy": "[USER_CONFIRMATION_REQUIRED]",
-    "networkThrottling": "[USER_CONFIRMATION_REQUIRED]",
-    "cpuThrottling": "[USER_CONFIRMATION_REQUIRED]"
+    "preset": "desktop",
+    "cachePolicy": "cold",
+    "networkThrottling": "simulate",
+    "cpuThrottling": "1x"
   }
 }
