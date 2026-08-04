@@ -3,11 +3,16 @@ import { resolve } from 'node:path'
 import { appendCsv, ensureDirectory, experimentRoot, now, readConfig, root, runCommand, writeText } from './experiment-utils.mjs'
 
 const config = readConfig()
+const pilotDirectory = process.argv.includes('--pilot-02') ? 'pilot-02' : process.argv.includes('--pilot') ? 'pilot' : undefined
+const pilot = Boolean(pilotDirectory)
+const outputRoot = pilot ? resolve(experimentRoot, pilotDirectory) : experimentRoot
+const runsPerCase = pilot ? 1 : config.runsPerCase
 const headers = ['framework', 'run', 'build_time_seconds', 'success', 'warnings', 'node_version', 'framework_version', 'measured_at', 'notes']
-const resultPath = resolve(experimentRoot, 'raw-data/build-results.csv')
+const resultPath = resolve(outputRoot, 'raw-data/build-results.csv')
 const frameworkVersion = (framework) => framework === 'nuxt' ? '4.5.1' : '16.2.12'
+let failedBuild = false
 
-for (let run = 1; run <= config.runsPerCase; run += 1) {
+for (let run = 1; run <= runsPerCase; run += 1) {
   for (const framework of ['nuxt', 'next']) {
     const item = config.frameworks[framework]
     const directory = resolve(root, item.directory)
@@ -16,8 +21,8 @@ for (let run = 1; run <= config.runsPerCase; run += 1) {
     const startedAt = process.hrtime.bigint()
     const execution = await runCommand({ command: item.buildCommand, cwd: directory })
     const seconds = Number(process.hrtime.bigint() - startedAt) / 1e9
-    const logPath = resolve(experimentRoot, 'build-logs', `${framework}-run-${String(run).padStart(2, '0')}.log`)
-    ensureDirectory(resolve(experimentRoot, 'build-logs'))
+    const logPath = resolve(outputRoot, 'build-logs', `${framework}-run-${String(run).padStart(2, '0')}.log`)
+    ensureDirectory(resolve(outputRoot, 'build-logs'))
     writeText(logPath, `${execution.stdout}${execution.stderr}`)
     appendCsv(resultPath, headers, {
       framework,
@@ -30,6 +35,8 @@ for (let run = 1; run <= config.runsPerCase; run += 1) {
       measured_at: now(),
       notes: execution.exitCode === 0 ? '' : `Build failed; see ${logPath}`,
     })
+    if (execution.exitCode !== 0) failedBuild = true
     console.log(`${framework} run ${run}: ${execution.exitCode === 0 ? 'success' : 'failed'} (${seconds.toFixed(3)}s)`)
   }
 }
+if (failedBuild) process.exitCode = 1

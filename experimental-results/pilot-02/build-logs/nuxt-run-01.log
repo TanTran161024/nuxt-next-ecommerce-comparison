@@ -1,0 +1,292 @@
+
+> nuxt-app@0.1.0 build
+> nuxt build
+
+T  [36mBuilding Nuxt for production...[39m
+|
+•  [32mNuxt [1m4.5.1[22m[39m[90m (with [39m[90mNitro [1m2.13.4[22m[39m[90m, Vite [1m8.2.0[22m[39m[90m and Vue [1m3.5.40[22m[39m[90m)[39m
+[nuxt] modules:before: 0.159ms
+[nuxt] kit:compatibility: 0.03ms
+[36mi[39m Module [36mpinia[39m took [36m1.8ms[39m to setup.
+[nuxt] eslint:config:addons: 0.028ms
+[36mi[39m Module [36m@nuxt/eslint[39m took [36m42.87ms[39m to setup.
+[36mi[39m Module [36m@nuxt/devtools[39m took [36m159.06ms[39m to setup.
+[nuxt] pages:routerOptions: 0.026ms
+[36mi[39m Module [36mnuxt:pages[39m took [36m18.14ms[39m to setup.
+[36mi[39m Module [36mnuxt:meta[39m took [36m5.16ms[39m to setup.
+[36mi[39m Module [36mnuxt:components[39m took [36m9.24ms[39m to setup.
+[36mi[39m Module [36mnuxt:compiler[39m took [36m0.3ms[39m to setup.
+[36mi[39m Module [36mnuxt:imports[39m took [36m2.5ms[39m to setup.
+[36mi[39m Module [36mnuxt:nuxt-config-schema[39m took [36m0.67ms[39m to setup.
+[36mi[39m Module [36m@nuxt/telemetry[39m took [36m0.23ms[39m to setup.
+[nuxt] imports:dirs: 0.099ms
+[nuxt] imports:sources: 0.138ms
+[nuxt] imports:context: 0.059ms
+[nuxt] imports:extend: 0.068ms
+[nuxt] eslint:config:addons: 0.027ms
+[nuxt] builder:generateApp: 11.518ms
+[nuxt] schema:extend: 0.026ms
+[nuxt] schema:resolved: 0.01ms
+[nuxt] modules:done: 45.804ms
+[nuxt] nitro:config: 179.228ms
+[nuxt] telemetry:setup: 0.017ms
+[nuxt] nitro:init: 66.053ms
+[nuxt] ready: 0.015ms
+|
+•  Nitro preset: [36mnode-server[39m
+[nitro] types:extend: 0.184ms
+[nuxt] prepare:types: 74.913ms
+[nuxt] components:dirs: 0.014ms
+[nuxt] app:resolve: 1.489ms
+[nuxt] pages:extend: 0.126ms
+[nuxt] pages:resolved: 0.256ms
+[nuxt] components:extend: 0.234ms
+[nuxt] app:templates: 26.853ms
+[nuxt] nitro:prepare:types: 0.153ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mapp-component.mjs[39m in 8.42ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/app.config.d.ts[39m in 8.47ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mapp.config.mjs[39m in 8.59ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/build.d.ts[39m in 8.69ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mnitro.client.mjs[39m in 8.33ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mcss.mjs[39m in 8.41ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mfetch.mjs[39m in 8.49ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mfetch.d.ts[39m in 8.6ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36merror-component.mjs[39m in 8.72ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mglobal-polyfills.mjs[39m in 8.93ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36misland-renderer.mjs[39m in 9.02ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mlayouts.mjs[39m in 9.02ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mmiddleware.mjs[39m in 8.86ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mpaths.mjs[39m in 8.31ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mroot-component.mjs[39m in 8.38ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/modules.d.ts[39m in 8.49ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/shared-app.config.d.ts[39m in 7.82ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtest-component-wrapper.mjs[39m in 7.95ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/vue-shim.d.ts[39m in 8.06ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/nitro-layouts.d.ts[39m in 8.19ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/builder-env.d.ts[39m in 8.29ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/layouts.d.ts[39m in 8.43ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mroutes.mjs[39m in 8.44ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mpages.mjs[39m in 7.63ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/middleware.d.ts[39m in 7.57ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/nitro-middleware.d.ts[39m in 7.67ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36munhead-options.mjs[39m in 7.8ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36munhead.config.mjs[39m in 7.87ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mcomponents.d.ts[39m in 7.98ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/components.d.ts[39m in 7.27ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mcomponents.plugin.mjs[39m in 6.84ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mcomponent-names.mjs[39m in 6.89ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mcomponents.islands.mjs[39m in 6.96ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mcomponent-chunk.mjs[39m in 6.85ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mroute-rules.mjs[39m in 8.62ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mimports.mjs[39m in 9.56ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mimports.d.ts[39m in 9.69ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/nitro-nuxt.d.ts[39m in 9.64ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/runtime-config.d.ts[39m in 36.1ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/imports.d.ts[39m in 38.96ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/shared-imports.d.ts[39m in 39.44ms
+[nuxt] pages:routerOptions: 0.018ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mrouter.options.mjs[39m in 65.93ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mnuxt.config.mjs[39m in 88.89ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mplugins.server.mjs[39m in 5.27ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mplugins.client.mjs[39m in 11.81ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/plugins.d.ts[39m in 13.93ms
+[nuxt] imports:extend: 0.031ms
+[nuxt] eslint:config:addons: 0.007ms
+[nuxt] builder:generateApp: 6.554ms
+[nuxt] app:templatesGenerated: 13.858ms
+[nuxt] build:before: 5.231ms
+[nuxt] vite:extend: 5.718ms
+[nuxt] vite:extendConfig: 22.824ms
+[nuxt] vite:configResolved: 0.015ms
+[36mi[39m Building client...
+[36mi[39m [36mvite v8.2.0 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 225 modules transformed.
+rendering chunks...
+computing gzip size...
+[36mi[39m .nuxt/dist/client/manifest.json               2.43 kB │ gzip:  0.55 kB
+.nuxt/dist/client/_nuxt/entry.DCYYJjc0.css   24.00 kB │ gzip:  5.67 kB
+.nuxt/dist/client/_nuxt/BDNMzG2s.js           0.08 kB │ gzip:  0.09 kB
+.nuxt/dist/client/_nuxt/Tte0vgVA.js           0.14 kB │ gzip:  0.14 kB
+.nuxt/dist/client/_nuxt/k3WXzIia.js           1.11 kB │ gzip:  0.55 kB
+.nuxt/dist/client/_nuxt/DavCQnyu.js           3.12 kB │ gzip:  1.34 kB
+.nuxt/dist/client/_nuxt/DThS7nh4.js           3.73 kB │ gzip:  1.62 kB
+.nuxt/dist/client/_nuxt/pH5UBuoz.js           4.51 kB │ gzip:  1.89 kB
+.nuxt/dist/client/_nuxt/B2xEK6xH.js           4.82 kB │ gzip:  2.08 kB
+.nuxt/dist/client/_nuxt/M-wK4-HL.js           4.85 kB │ gzip:  1.87 kB
+.nuxt/dist/client/_nuxt/od2nfITI.js           8.49 kB │ gzip:  3.13 kB
+.nuxt/dist/client/_nuxt/8_LkjgOI.js          30.71 kB │ gzip: 11.32 kB
+.nuxt/dist/client/_nuxt/Dbm3sNP6.js          57.40 kB │ gzip: 21.93 kB
+.nuxt/dist/client/_nuxt/DxGcZHkm.js         132.22 kB │ gzip: 51.02 kB
+
+[36mi[39m [32m✓ built in 4.45s[39m
+[nuxt] vite:compiled: 0.018ms
+[32m√[39m Client built in 4541ms
+[nuxt] vite:extendConfig: 1.665ms
+[nuxt] vite:configResolved: 0.014ms
+[36mi[39m Building server...
+[36mi[39m [36mvite v8.2.0 [32mbuilding ssr environment for production...[36m[39m
+[2Ktransforming...✓ 128 modules transformed.
+rendering chunks...
+[36mi[39m .nuxt/dist/server/styles.mjs                               0.06 kB
+.nuxt/dist/server/_nuxt/product-presentation-Drk5BQgf.js   0.37 kB │ map:   0.60 kB
+.nuxt/dist/server/_nuxt/cart-CoNomJg1.js                   1.19 kB │ map:   3.25 kB
+.nuxt/dist/server/_nuxt/cart-CtEnzb3x.js                   5.56 kB │ map:   7.75 kB
+.nuxt/dist/server/_nuxt/_slug_-CRaECyWH.js                 6.93 kB │ map:  13.11 kB
+.nuxt/dist/server/_nuxt/pages-D0Jd0Mel.js                  7.28 kB │ map:  10.28 kB
+.nuxt/dist/server/_nuxt/ProductGrid-C2TVlaTw.js            8.76 kB │ map:   9.82 kB
+.nuxt/dist/server/_nuxt/default-PrQ2tpJj.js               10.29 kB │ map:  10.50 kB
+.nuxt/dist/server/_nuxt/products-CUtQQZE2.js              14.61 kB │ map:  24.68 kB
+.nuxt/dist/server/server.mjs                              76.87 kB │ map: 217.46 kB
+
+[36mi[39m [32m✓ built in 4.25s[39m
+[nuxt] build:manifest: 0.837ms
+[nuxt] vite:compiled: 0.018ms
+[32m√[39m Server built in 4267ms
+[nuxt] schema:beforeWrite: 0.014ms
+[nuxt] schema:written: 0.034ms
+[nuxt] nitro:build:before: 1.587ms
+[nuxt] prerender:routes: 0.015ms
+[nitro] prerender:routes: 0.346ms
+[nitro] build:before: 0.113ms
+[90m[[90mnitro[90m][39m [32m√[39m Generated public [36m.output/public[39m
+[nuxt] nitro:build:public-assets: 0.016ms
+[nitro] rollup:before: 81.889ms
+[nitro] types:extend: 0.055ms
+[90m[[90mnitro[90m][39m [36mi[39m Building Nuxt Nitro server (preset: [36mnode-server[39m, compatibility date: [36m2026-08-03[39m)
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built
+[90m  ├─ .output/server/chunks/_/categories.mjs (588 B)[39m[90m (300 B gzip)[39m
+[90m  ├─ .output/server/chunks/_/categories.mjs.map (105 B)[39m[90m (91 B gzip)[39m
+[90m  ├─ .output/server/chunks/_/error-500.mjs (5.19 kB)[39m[90m (2.13 kB gzip)[39m
+[90m  ├─ .output/server/chunks/_/error-500.mjs.map (182 B)[39m[90m (154 B gzip)[39m
+[90m  ├─ .output/server/chunks/_/nitro.mjs (174 kB)[39m[90m (43 kB gzip)[39m
+[90m  ├─ .output/server/chunks/_/nitro.mjs.map (3.05 kB)[39m[90m (733 B gzip)[39m
+[90m  ├─ .output/server/chunks/_/products.mjs (41.1 kB)[39m[90m (4.71 kB gzip)[39m
+[90m  ├─ .output/server/chunks/_/products.mjs.map (5.61 kB)[39m[90m (792 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/_slug_-CRaECyWH.mjs (8.18 kB)[39m[90m (2.68 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/_slug_-CRaECyWH.mjs.map (3.68 kB)[39m[90m (1.07 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/cart-CoNomJg1.mjs (1.34 kB)[39m[90m (520 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/cart-CoNomJg1.mjs.map (1.49 kB)[39m[90m (488 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/cart-CtEnzb3x.mjs (6.25 kB)[39m[90m (1.98 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/cart-CtEnzb3x.mjs.map (1.84 kB)[39m[90m (549 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/default-PrQ2tpJj.mjs (11.6 kB)[39m[90m (2.82 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/default-PrQ2tpJj.mjs.map (3.86 kB)[39m[90m (936 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/pages-D0Jd0Mel.mjs (8.7 kB)[39m[90m (2.66 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/pages-D0Jd0Mel.mjs.map (2.9 kB)[39m[90m (840 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/product-presentation-Drk5BQgf.mjs (484 B)[39m[90m (296 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/product-presentation-Drk5BQgf.mjs.map (359 B)[39m[90m (238 B gzip)[39m
+[90m  ├─ .output/server/chunks/build/ProductGrid-C2TVlaTw.mjs (8.98 kB)[39m[90m (2.43 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/ProductGrid-C2TVlaTw.mjs.map (3.78 kB)[39m[90m (1.03 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/products-CUtQQZE2.mjs (15.8 kB)[39m[90m (4.08 kB gzip)[39m
+[90m  ├─ .output/server/chunks/build/products-CUtQQZE2.mjs.map (8.54 kB)[39m[90m (1.96 kB gzip)[39m
+[90m  ├─ .output/server/chunks/routes/api/index.get.mjs (1.9 kB)[39m[90m (727 B gzip)[39m
+[90m  ├─ .output/server/chunks/routes/api/index.get.mjs.map (1.36 kB)[39m[90m (496 B gzip)[39m
+[90m  ├─ .output/server/chunks/routes/api/products/_slug_.get.mjs (1.48 kB)[39m[90m (609 B gzip)[39m
+[90m  ├─ .output/server/chunks/routes/api/products/_slug_.get.mjs.map (1.08 kB)[39m[90m (414 B gzip)[39m
+[90m  ├─ .output/server/chunks/routes/renderer.mjs (16 kB)[39m[90m (5.55 kB gzip)[39m
+[90m  ├─ .output/server/chunks/routes/renderer.mjs.map (1.04 kB)[39m[90m (301 B gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/_virtual_spa-template.mjs (245 B)[39m[90m (157 B gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/_virtual_spa-template.mjs.map (90 B)[39m[90m (98 B gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/entry.mjs (91.8 kB)[39m[90m (25.3 kB gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/entry.mjs.map (4.66 kB)[39m[90m (1.28 kB gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/precomputed.mjs (5.51 kB)[39m[90m (982 B gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/precomputed.mjs.map (6.43 kB)[39m[90m (500 B gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/styles.mjs (207 B)[39m[90m (155 B gzip)[39m
+[90m  ├─ .output/server/chunks/virtual/styles.mjs.map (126 B)[39m[90m (119 B gzip)[39m
+[90m  ├─ .output/server/index.mjs (1.78 kB)[39m[90m (776 B gzip)[39m
+[90m  ├─ .output/server/package.json (761 B)[39m[90m (334 B gzip)[39m
+[90m  └─ .output/server/timing.js (398 B)[39m[90m (230 B gzip)[39m
+[36mΣ Total size:[39m 2.26 MB (566 kB gzip)
+[nitro] compiled: 0.033ms
+[90m[[90mnitro[90m][39m [32m√[39m You can preview this build using [36mnode .output/server/index.mjs[39m
+[nuxt] build:done: 7.470s
+
+[1m[36m Nuxt Build Performance[39m[22m
+
+  [1mPhase[22m                       [1mDuration[22m       [1mRSS Delta[22m      [1mHeap Delta[22m
+  [2m────────────────────────────────────────────────────────────────────[22m
+  init                            [32m11ms[39m       [32m-720.0 KB[39m         -2.8 MB  [32m███[39m
+  modules                        [32m101ms[39m         [32m+4.7 MB[39m         -5.3 MB  [32m█████[39m
+  modules:done                    [32m34ms[39m         [32m+1.6 MB[39m         +2.6 MB  [32m████[39m
+  builder:generateApp             [32m11ms[39m       [32m+160.0 KB[39m         +1.1 MB  [32m███[39m
+  nitro:config                   [32m179ms[39m         [32m+3.3 MB[39m         +3.9 MB  [32m██████[39m
+  nitro:createNitro              [33m560ms[39m         [32m+8.0 MB[39m       -183.1 KB  [33m███████[39m
+  nitro:init                      [32m66ms[39m        [32m+72.0 KB[39m       +163.6 KB  [32m█████[39m
+  ready                            [32m2ms[39m        [32m+92.0 KB[39m       +123.7 KB  [32m█[39m
+  prepare:types                   [32m75ms[39m         [32m+4.7 MB[39m         -3.0 MB  [32m█████[39m
+  app:generate                   [32m147ms[39m         [32m+3.7 MB[39m       -994.0 KB  [32m██████[39m
+  app:templates                   [32m27ms[39m       [32m+208.0 KB[39m         +1.6 MB  [32m████[39m
+  app:templatesGenerated           [32m7ms[39m         [32m+1.2 MB[39m         +1.2 MB  [32m██[39m
+  builder:generateApp              [32m7ms[39m       [32m+144.0 KB[39m         +1.0 MB  [32m██[39m
+  build:before                     [32m5ms[39m            [32m+0 B[39m       +352.4 KB  [32m██[39m
+  build:bundle                    [31m2.6s[39m        [33m+40.5 MB[39m        +31.3 MB  [31m█████████[39m[33m░[39m
+  build:done                       [32m4ms[39m            [32m+0 B[39m        +75.9 KB  [32m██[39m
+  nitro:build                     [31m7.5s[39m       [31m+373.4 MB[39m       +134.9 MB  [31m██████████[39m[31m░░░░░░░░░░[39m
+  [2m────────────────────────────────────────────────────────────────────[22m
+  [1mTotal[22m                          [1m23.4s[22m       [1m+707.3 MB[22m       [1m+295.2 MB[22m
+[2m  Tip: run with NODE_OPTIONS=--expose-gc to see retained heap per phase[22m
+
+[1m Modules[22m
+
+  [2m•[22m @nuxt/devtools [2m—[22m [33m159ms[39m
+  [2m•[22m @nuxt/eslint [2m—[22m [2m43ms[22m
+  [2m•[22m nuxt:pages [2m—[22m [2m18ms[22m
+  [2m•[22m nuxt:components [2m—[22m [2m9ms[22m
+  [2m•[22m nuxt:meta [2m—[22m [2m5ms[22m
+
+[1m Bundler Plugins[22m
+
+  [2m•[22m nitro:node-externals [2mresolveId[22m [2m—[22m [31m309ms/file[39m[2m, max 4.5s[22m [2m(658 calls)[22m
+  [2m•[22m vite:css [2mtransform[22m [2m—[22m [31m152ms/file[39m [2m(2 calls)[22m
+  [2m•[22m @tailwindcss/vite:generate:build [2mtransform[22m [2m—[22m [31m97ms/file[39m [2m(3 calls)[22m
+  [2m•[22m nuxt:resolve-bare-imports [2mresolveId[22m [2m—[22m [31m43ms/file[39m [2m(5 calls)[22m
+  [2m•[22m nitro:alias [2mresolveId[22m [2m—[22m [31m32ms/file[39m[2m, max 4.4s[22m [2m(853 calls)[22m
+  [2m•[22m vite:vue [2mtransform[22m [2m—[22m [33m9ms/file[39m[2m, max 152ms[22m [2m(70 calls)[22m
+  [2m•[22m nuxt:tree-shake-composables:transform [2mtransform[22m [2m—[22m [33m5ms/file[39m[2m, max 63ms[22m [2m(30 calls)[22m
+  [2m•[22m nuxt:compiler:keyed-functions [2mtransform[22m [2m—[22m [33m3ms/file[39m [2m(9 calls)[22m
+  [2m•[22m nitro:inject [2mtransform[22m [2m—[22m [2m2ms/file[22m[2m, max 46ms[22m [2m(148 calls)[22m
+  [2m•[22m nitro:esbuild [2mtransform[22m [2m—[22m [2m2ms/file[22m[2m, max 66ms[22m [2m(148 calls)[22m
+  [2m•[22m unctx:transform [2mtransform[22m [2m—[22m [2m1ms/file[22m[2m, max 9ms[22m [2m(42 calls)[22m
+  [2m•[22m nuxt:prehydrate-transform [2mtransform[22m [2m—[22m [2m820µs/file[22m [2m(3 calls)[22m
+  [2m•[22m nuxt:imports-transform [2mtransform[22m [2m—[22m [2m530µs/file[22m[2m, max 28ms[22m [2m(481 calls)[22m
+
+[1m Details[22m
+
+  [2m•[22m module:@nuxt/eslint [2m—[22m [2m43ms[22m
+  [2m•[22m module:@nuxt/devtools [2m—[22m [33m159ms[39m
+  [2m•[22m module:nuxt:pages [2m—[22m [2m18ms[22m
+  [2m•[22m module:nuxt:meta [2m—[22m [2m5ms[22m
+  [2m•[22m module:nuxt:components [2m—[22m [2m9ms[22m
+  [2m•[22m vite:extend [2m—[22m [2m6ms[22m
+  [2m•[22m vite:client [2m—[22m [31m4.6s[39m
+  [2m•[22m vite:extendConfig [2m—[22m [2m23ms[22m
+  [2m•[22m vite:server [2m—[22m [31m4.3s[39m
+
+[2m Data dump written to ./.nuxt/perf-report.json[22m
+[2m Trace written to ./.nuxt/perf-trace.json (load in [36mhttps://ui.perfetto.dev[39m)[22m
+
+[nitro] close: 0.195ms
+[nuxt] close: 19.49ms
+|
+—  ✨ Build complete!
+
+[43m[30m WARN [39m[49m [33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vite-plugin-checker (22%)
+  - impound (19%)
+  - nuxt:import-protection:impound (14%)
+  - nuxt:virtual (13%)
+  - impound:trace (8%)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+[39m
+
+
+[43m[30m WARN [39m[49m [33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vite-plugin-checker (28%)
+  - nuxt:import-protection:impound (21%)
+  - nuxt:virtual (14%)
+  - nuxt:component-name-plugin (9%)
+  - nuxt:ssr-styles:ssr (5%)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+[39m
+
+(node:14940) [DEP0155] DeprecationWarning: Use of deprecated trailing slash pattern mapping "./" in the "exports" field module resolution of the package at C:\Users\HP\Desktop\nuxt-next-ecommerce-comparison\nuxt-app\node_modules\@vue\shared\package.json imported from C:\Users\HP\Desktop\nuxt-next-ecommerce-comparison\nuxt-app\node_modules\@nuxt\nitro-server\dist\runtime\templates\error-500.mjs. Mapping specifiers ending in "/" is no longer supported.
+(Use `node --trace-deprecation ...` to show where the warning was created)

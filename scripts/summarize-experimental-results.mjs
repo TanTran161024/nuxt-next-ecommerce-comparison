@@ -3,8 +3,10 @@ import { dirname, resolve } from 'node:path'
 import { mkdirSync } from 'node:fs'
 import { root } from './data-utils.mjs'
 
-const defaultInput = resolve(root, 'experimental-results/raw-data/lighthouse-results.csv')
-const defaultOutput = resolve(root, 'experimental-results/summary/lighthouse-summary.csv')
+const pilotDirectory = process.argv.includes('--pilot-02') ? 'pilot-02' : process.argv.includes('--pilot') ? 'pilot' : undefined
+const resultRoot = resolve(root, pilotDirectory ? `experimental-results/${pilotDirectory}` : 'experimental-results')
+const defaultInput = resolve(resultRoot, 'raw-data/lighthouse-results.csv')
+const defaultOutput = resolve(resultRoot, 'summary/lighthouse-summary.csv')
 const argumentsByName = new Map(process.argv.slice(2).reduce((pairs, argument, index, argumentsList) => {
   if (argument.startsWith('--')) pairs.push([argument, argumentsList[index + 1]])
   return pairs
@@ -74,7 +76,7 @@ if (!existsSync(input)) {
         const average = values.reduce((sum, value) => sum + value, 0) / values.length
         const sampleStandardDeviation = values.length > 1
           ? Math.sqrt(values.reduce((sum, value) => sum + (value - average) ** 2, 0) / (values.length - 1))
-          : 0
+          : ''
         result[`${metric}_mean`] = average
         result[`${metric}_sample_stddev`] = sampleStandardDeviation
         result[`${metric}_median`] = median(values)
@@ -93,7 +95,8 @@ if (!existsSync(input)) {
     } else {
       mkdirSync(dirname(output), { recursive: true })
       writeFileSync(output, csv)
-      const markdown = ['# Lighthouse summary', '', `Source: ${input}`, '', 'Values are descriptive only; this file does not rank frameworks.', '', '```csv', csv.trimEnd(), '```', ''].join('\n')
+      const incomplete = summary.some((row) => row.runs < 2)
+      const markdown = ['# Lighthouse summary', '', `Source: ${input}`, '', 'Values are descriptive only; this file does not rank frameworks.', ...(incomplete ? ['', 'Không đủ số lần đo để tính độ lệch chuẩn mẫu.'] : []), '', '```csv', csv.trimEnd(), '```', ''].join('\n')
       writeFileSync(resolve(dirname(output), 'lighthouse-summary.md'), markdown)
       console.log(`Summary written to ${output}`)
     }

@@ -9,17 +9,41 @@ const add = (name, passed, detail) => checks.push({ name, passed, detail })
 const version = async (command) => (await runCommand({ command })).stdout.trim()
 const gitStatus = await runCommand({ command: 'git status --porcelain' })
 const dirtyFiles = gitStatus.stdout.split(/\r?\n/).filter(Boolean).map((line) => line.slice(3))
-const onlyExperimentalFiles = dirtyFiles.every((file) => file.replaceAll('\\', '/').startsWith('experimental-results/'))
+const permittedBenchmarkTools = new Set([
+  'scripts/check-benchmark-environment.mjs',
+  'scripts/experiment-utils.mjs',
+  'scripts/lighthouse-benchmark-options.mjs',
+  'scripts/run-build-benchmark.mjs',
+  'scripts/run-functional-benchmark.mjs',
+  'scripts/run-full-experiment.mjs',
+  'scripts/run-lighthouse-benchmark.mjs',
+  'scripts/summarize-build-results.mjs',
+  'scripts/summarize-experimental-results.mjs',
+])
+const onlyBenchmarkFiles = dirtyFiles.every((file) => {
+  const normalized = file.replaceAll('\\', '/')
+  return normalized.startsWith('experimental-results/') || permittedBenchmarkTools.has(normalized)
+})
 
 add('Node.js', process.version === `v${config.nodeVersion}`, `required ${config.nodeVersion}; found ${process.version}`)
 const npmVersion = await version('npm --version')
 add('npm', npmVersion === config.npmVersion, `required ${config.npmVersion}; found ${npmVersion || 'not found'}`)
-add('Git working tree', dirtyFiles.length === 0 || onlyExperimentalFiles, dirtyFiles.length === 0 ? 'clean' : `non-experimental changes: ${dirtyFiles.join(', ')}`)
+add('Git working tree', dirtyFiles.length === 0 || onlyBenchmarkFiles, dirtyFiles.length === 0 ? 'clean' : `only benchmark tooling/results: ${dirtyFiles.join(', ')}`)
 for (const [framework, value] of Object.entries(config.frameworks)) {
   add(`${framework} dependencies`, existsSync(resolve(root, value.directory, 'node_modules')), existsSync(resolve(root, value.directory, 'node_modules')) ? 'node_modules present' : 'node_modules missing')
 }
 const products = JSON.parse(readFileSync(resolve(root, 'shared-data/products.json'), 'utf8'))
 add('Benchmark product slug', products.some((product) => product.slug === config.productSlug), `${config.productSlug}`)
+for (const [framework, value] of Object.entries(config.frameworks)) {
+  const port = await runCommand({ command: process.platform === 'win32' ? `netstat -ano -p tcp | findstr /R /C:":${value.port} .*LISTENING"` : `lsof -iTCP:${value.port} -sTCP:LISTEN` })
+  let detail = 'available'
+  if (port.exitCode === 0) {
+    const pid = process.platform === 'win32' ? port.stdout.trim().split(/\s+/).at(-1) : ''
+    const processName = pid ? (await runCommand({ command: `tasklist /fi "PID eq ${pid}" /fo csv /nh` })).stdout.trim() : ''
+    detail = `occupied: ${port.stdout.trim()}${processName ? `; process: ${processName}` : ''}`
+  }
+  add(`${framework} port ${value.port}`, port.exitCode !== 0, detail)
+}
 const chromeCommand = process.platform === 'win32'
   ? 'where chrome.exe || where chromium.exe || where msedge.exe'
   : 'command -v google-chrome || command -v chromium || command -v chromium-browser'
@@ -37,6 +61,8 @@ const localLighthouse = [
   resolve(root, 'next-app/node_modules/.bin/lighthouse.cmd'),
 ].find(existsSync)
 add('Lighthouse CLI', lighthouse.exitCode === 0 || Boolean(localLighthouse), lighthouse.stdout.trim() || localLighthouse || 'not found locally or on PATH; did not install')
+const lighthouseVersion = await version('lighthouse --version')
+add('Lighthouse version', /^\d+\.\d+\.\d+$/.test(lighthouseVersion), lighthouseVersion || 'not available')
 const lighthousePlaceholders = Object.entries(config.lighthouse).filter(([, value]) => isPlaceholder(value)).map(([key]) => key)
 const lighthouseErrors = lighthousePlaceholders.length ? [`requires confirmation: ${lighthousePlaceholders.join(', ')}`] : lighthouseConfigurationErrors(config.lighthouse)
 add('Lighthouse configuration', lighthouseErrors.length === 0, lighthouseErrors.length ? lighthouseErrors.join('; ') : 'complete')

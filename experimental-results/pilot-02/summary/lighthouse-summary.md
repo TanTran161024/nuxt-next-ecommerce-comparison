@@ -1,0 +1,17 @@
+# Lighthouse summary
+
+Source: C:\Users\HP\Desktop\nuxt-next-ecommerce-comparison\experimental-results\pilot-02\raw-data\lighthouse-results.csv
+
+Values are descriptive only; this file does not rank frameworks.
+
+Không đủ số lần đo để tính độ lệch chuẩn mẫu.
+
+```csv
+framework,page,runs,performance_mean,performance_sample_stddev,performance_median,performance_min,performance_max,accessibility_mean,accessibility_sample_stddev,accessibility_median,accessibility_min,accessibility_max,best_practices_mean,best_practices_sample_stddev,best_practices_median,best_practices_min,best_practices_max,seo_mean,seo_sample_stddev,seo_median,seo_min,seo_max,fcp_ms_mean,fcp_ms_sample_stddev,fcp_ms_median,fcp_ms_min,fcp_ms_max,lcp_ms_mean,lcp_ms_sample_stddev,lcp_ms_median,lcp_ms_min,lcp_ms_max,tbt_ms_mean,tbt_ms_sample_stddev,tbt_ms_median,tbt_ms_min,tbt_ms_max,cls_mean,cls_sample_stddev,cls_median,cls_min,cls_max
+nuxt,home,1,98,,98,98,98,90,,90,90,90,100,,100,100,100,100,,100,100,100,622.4146496755823,,622.4146496755823,622.4146496755823,622.4146496755823,1042.6219745133735,,1042.6219745133735,1042.6219745133735,1042.6219745133735,0,,0,0,0,0,,0,0,0
+nuxt,products,1,97,,97,97,97,91,,91,91,91,100,,100,100,100,100,,100,100,100,668.8026301510922,,668.8026301510922,668.8026301510922,668.8026301510922,1231.5065753777303,,1231.5065753777303,1231.5065753777303,1231.5065753777303,0,,0,0,0,0,,0,0,0
+nuxt,product-detail,1,99,,99,99,99,89,,89,89,89,100,,100,100,100,100,,100,100,100,576.0586,,576.0586,576.0586,576.0586,874.0879,,874.0879,874.0879,874.0879,0,,0,0,0,0,,0,0,0
+next,home,1,89,,89,89,89,96,,96,96,96,96,,96,96,96,100,,100,100,100,228.71550000000002,,228.71550000000002,228.71550000000002,228.71550000000002,607.7155,,607.7155,607.7155,607.7155,0,,0,0,0,0.2238417403777193,,0.2238417403777193,0.2238417403777193,0.2238417403777193
+next,products,1,95,,95,95,95,96,,96,96,96,96,,96,96,96,100,,100,100,100,304.926,,304.926,304.926,304.926,784.3889999999999,,784.3889999999999,784.3889999999999,784.3889999999999,0,,0,0,0,0.1351063829787234,,0.1351063829787234,0.1351063829787234,0.1351063829787234
+next,product-detail,1,100,,100,100,100,96,,96,96,96,96,,96,96,96,100,,100,100,100,222.84550000000002,,222.84550000000002,222.84550000000002,222.84550000000002,574.8455,,574.8455,574.8455,574.8455,0,,0,0,0,0,,0,0,0
+```

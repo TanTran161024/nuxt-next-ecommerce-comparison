@@ -1,0 +1,537 @@
+
+> nuxt-app@0.1.0 preview
+> nuxt preview --port 3000
+
+[nuxt] modules:before: 0.149ms
+[nuxt] kit:compatibility: 0.032ms
+[36mi[39m Module [36mpinia[39m took [36m1.75ms[39m to setup.
+[nuxt] eslint:config:addons: 0.032ms
+[36mi[39m Module [36m@nuxt/eslint[39m took [36m41.32ms[39m to setup.
+[36mi[39m Module [36m@nuxt/devtools[39m took [36m220.46ms[39m to setup.
+[nuxt] pages:routerOptions: 0.029ms
+[36mi[39m Module [36mnuxt:pages[39m took [36m16.36ms[39m to setup.
+[36mi[39m Module [36mnuxt:meta[39m took [36m5.17ms[39m to setup.
+[36mi[39m Module [36mnuxt:components[39m took [36m9.31ms[39m to setup.
+[36mi[39m Module [36mnuxt:compiler[39m took [36m0.38ms[39m to setup.
+[36mi[39m Module [36mnuxt:imports[39m took [36m2.49ms[39m to setup.
+[36mi[39m Module [36mnuxt:nuxt-config-schema[39m took [36m0.65ms[39m to setup.
+[36mi[39m Module [36m@nuxt/telemetry[39m took [36m0.22ms[39m to setup.
+[nuxt] imports:dirs: 0.094ms
+[nuxt] imports:sources: 0.121ms
+[nuxt] imports:context: 0.386ms
+[nuxt] imports:extend: 0.116ms
+[nuxt] eslint:config:addons: 0.022ms
+[nuxt] builder:generateApp: 10.948ms
+[nuxt] schema:extend: 0.023ms
+[nuxt] schema:resolved: 0.009ms
+[nuxt] modules:done: 46.057ms
+[nuxt] nitro:config: 173.624ms
+[nuxt] telemetry:setup: 0.021ms
+[nuxt] nitro:init: 74.152ms
+|
+|
+| [33m+[39m[33m-[39m[33m-[39m[33m Previewing Nuxt app [39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m+[39m
+| [33m|[39m                                                                        [33m|[39m
+| [33m|[39m  You are previewing a Nuxt app. In production, do not use this CLI.    [33m|[39m
+| [33m|[39m  Instead, run [36mnode server/index.mjs[39m directly.                          [33m|[39m
+| [33m|[39m                                                                        [33m|[39m
+| [33m|[39m  Node.js:           [36mv22.23.2[39m                                           [33m|[39m
+| [33m|[39m  Nitro preset:      [36mnode-server[39m                                        [33m|[39m
+| [33m|[39m  Working directory: [36m.output[39m                                            [33m|[39m
+| [33m|[39m                                                                        [33m|[39m
+| [33m+[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m-[39m[33m+[39m
+|
+—  Running [36mnode server/index.mjs[39m in [36m.output[39m
+
+[nuxt] ready: 0.017ms
+
+[1m[36m Nuxt Build Performance[39m[22m
+
+  [1mPhase[22m                       [1mDuration[22m       [1mRSS Delta[22m      [1mHeap Delta[22m
+  [2m────────────────────────────────────────────────────────────────────[22m
+  init                            [32m12ms[39m         [32m-1.4 MB[39m         -2.9 MB  [32m████[39m[32m░░[39m
+  modules                         [32m93ms[39m         [32m+2.6 MB[39m         -6.3 MB  [32m███████[39m[32m░░░░[39m
+  modules:done                    [32m35ms[39m       [32m+632.0 KB[39m         +2.6 MB  [32m██████[39m[32m░[39m
+  builder:generateApp             [32m11ms[39m       [32m+488.0 KB[39m         +1.1 MB  [32m████[39m[32m░[39m
+  nitro:config                   [32m174ms[39m         [32m+3.1 MB[39m         +4.1 MB  [32m████████[39m[32m░░░░[39m
+  nitro:createNitro              [33m507ms[39m         [32m+7.5 MB[39m       -311.3 KB  [33m██████████[39m[32m░░░░░░░░░░[39m
+  nitro:init                      [32m74ms[39m        [32m+80.0 KB[39m       +171.7 KB  [32m███████[39m
+  ready                            [32m3ms[39m         [32m+4.0 KB[39m       +123.6 KB  [32m██[39m
+  [2m────────────────────────────────────────────────────────────────────[22m
+  [1mTotal[22m                           [1m3.4s[22m        [1m+46.4 MB[22m        [1m+28.9 MB[22m
+[2m  Tip: run with NODE_OPTIONS=--expose-gc to see retained heap per phase[22m
+
+[1m Modules[22m
+
+  [2m•[22m @nuxt/devtools [2m—[22m [33m220ms[39m
+  [2m•[22m @nuxt/eslint [2m—[22m [2m41ms[22m
+  [2m•[22m nuxt:pages [2m—[22m [2m16ms[22m
+  [2m•[22m nuxt:components [2m—[22m [2m9ms[22m
+  [2m•[22m nuxt:meta [2m—[22m [2m5ms[22m
+
+[1m Details[22m
+
+  [2m•[22m module:@nuxt/eslint [2m—[22m [2m41ms[22m
+  [2m•[22m module:@nuxt/devtools [2m—[22m [33m220ms[39m
+  [2m•[22m module:nuxt:pages [2m—[22m [2m16ms[22m
+  [2m•[22m module:nuxt:meta [2m—[22m [2m5ms[22m
+  [2m•[22m module:nuxt:components [2m—[22m [2m9ms[22m
+
+[2m Data dump written to ./node_modules/.cache/nuxt/.nuxt/perf-report.json[22m
+[2m Trace written to ./node_modules/.cache/nuxt/.nuxt/perf-trace.json (load in [36mhttps://ui.perfetto.dev[39m)[22m
+
+[nitro] close: 0.267ms
+[nuxt] close: 12.145ms
+> Load chunks/_/nitro (4ms)
+> Nitro Start (4ms)
+Listening on http://[::]:3000
+[nitro-runtime] request: 0.6ms
+[nitro-runtime] render:before: 0.021ms
+> Load chunks/virtual/precomputed (1ms)
+[nitro-runtime] render:route: 0.026ms
+[nuxt-app] page:loading:start: 0.059ms
+[nuxt-app] app:created: 3.392ms
+[nuxt-app] vue:setup: 0.028ms
+[nitro-runtime] request: 1.99ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.014ms
+[nuxt-app] app:rendered: 0.087ms
+[nitro-runtime] render:html: 0.026ms
+[nitro-runtime] render:response: 0.015ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.036ms
+[nitro-runtime] request: 0.13ms
+[nitro-runtime] render:before: 0.023ms
+[nitro-runtime] render:route: 0.02ms
+[nuxt-app] page:loading:start: 0.01ms
+[nuxt-app] app:created: 0.333ms
+[nuxt-app] vue:setup: 0.039ms
+[nitro-runtime] request: 0.613ms
+[nitro-runtime] beforeResponse: 0.017ms
+[nitro-runtime] afterResponse: 0.024ms
+[nuxt-app] app:rendered: 0.07ms
+[nitro-runtime] render:html: 0.023ms
+[nitro-runtime] render:response: 0.017ms
+[nitro-runtime] beforeResponse: 0.01ms
+[nitro-runtime] afterResponse: 0.02ms
+[nitro-runtime] request: 0.263ms
+[nitro-runtime] request: 0.102ms
+[nitro-runtime] request: 0.068ms
+[nitro-runtime] request: 0.067ms
+[nitro-runtime] request: 0.063ms
+[nitro-runtime] request: 0.202ms
+[nitro-runtime] beforeResponse: 0.023ms
+[nitro-runtime] beforeResponse: 0.014ms
+[nitro-runtime] beforeResponse: 0.011ms
+[nitro-runtime] beforeResponse: 0.011ms
+[nitro-runtime] afterResponse: 0.036ms
+[nitro-runtime] afterResponse: 0.05ms
+[nitro-runtime] afterResponse: 0.031ms
+[nitro-runtime] afterResponse: 0.036ms
+[nitro-runtime] beforeResponse: 0.011ms
+[nitro-runtime] request: 0.235ms
+[nitro-runtime] afterResponse: 0.046ms
+[nitro-runtime] request: 0.135ms
+[nitro-runtime] request: 0.095ms
+[nitro-runtime] beforeResponse: 0.03ms
+[nitro-runtime] afterResponse: 0.041ms
+[nitro-runtime] request: 0.117ms
+[nitro-runtime] beforeResponse: 0.041ms
+[nitro-runtime] afterResponse: 0.037ms
+[nitro-runtime] beforeResponse: 0.024ms
+[nitro-runtime] afterResponse: 0.035ms
+[nitro-runtime] beforeResponse: 0.018ms
+[nitro-runtime] request: 0.161ms
+[nitro-runtime] afterResponse: 0.036ms
+[nitro-runtime] request: 0.075ms
+[nitro-runtime] beforeResponse: 0.019ms
+[nitro-runtime] afterResponse: 0.016ms
+[nitro-runtime] request: 0.068ms
+[nitro-runtime] beforeResponse: 0.051ms
+[nitro-runtime] afterResponse: 0.042ms
+[nitro-runtime] beforeResponse: 0.02ms
+[nitro-runtime] request: 0.079ms
+[nitro-runtime] afterResponse: 0.026ms
+[nitro-runtime] request: 0.088ms
+[nitro-runtime] request: 0.081ms
+[nitro-runtime] beforeResponse: 0.039ms
+[nitro-runtime] afterResponse: 0.1ms
+[nitro-runtime] beforeResponse: 0.023ms
+[nitro-runtime] afterResponse: 0.037ms
+[nitro-runtime] request: 0.105ms
+[nitro-runtime] beforeResponse: 0.034ms
+[nitro-runtime] afterResponse: 0.049ms
+[nitro-runtime] beforeResponse: 0.029ms
+[nitro-runtime] request: 0.14ms
+[nitro-runtime] afterResponse: 0.068ms
+[nitro-runtime] beforeResponse: 0.032ms
+[nitro-runtime] afterResponse: 0.032ms
+[nitro-runtime] request: 0.086ms
+[nitro-runtime] beforeResponse: 0.029ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] beforeResponse: 0.03ms
+[nitro-runtime] afterResponse: 0.018ms
+[nitro-runtime] request: 0.057ms
+[nitro-runtime] beforeResponse: 0.029ms
+[nitro-runtime] afterResponse: 0.018ms
+[nitro-runtime] request: 0.166ms
+[nitro-runtime] render:before: 0.024ms
+[nitro-runtime] beforeResponse: 0.031ms
+[nitro-runtime] afterResponse: 0.023ms
+[nitro-runtime] request: 0.125ms
+[nitro-runtime] request: 0.121ms
+[nitro-runtime] beforeResponse: 0.026ms
+[nitro-runtime] afterResponse: 0.023ms
+[nitro-runtime] beforeResponse: 0.043ms
+[nitro-runtime] afterResponse: 0.033ms
+[nitro-runtime] request: 0.108ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.016ms
+[nitro-runtime] request: 0.115ms
+[nitro-runtime] render:before: 0.021ms
+[nitro-runtime] render:route: 0.009ms
+[nuxt-app] page:loading:start: 0.075ms
+[nuxt-app] app:created: 0.807ms
+[nuxt-app] vue:setup: 0.01ms
+[nuxt-app] app:rendered: 0.031ms
+[nitro-runtime] error: 0.365ms
+[nitro-runtime] request: 0.104ms
+[nitro-runtime] render:before: 0.01ms
+[nitro-runtime] render:route: 0.009ms
+[nuxt-app] page:loading:start: 0.016ms
+[nuxt-app] app:created: 0.405ms
+[nuxt-app] vue:setup: 0.008ms
+[nuxt-app] app:rendered: 0.024ms
+[nitro-runtime] error: 0.061ms
+[nitro-runtime] request: 0.112ms
+[nitro-runtime] beforeResponse: 0.036ms
+[nitro-runtime] afterResponse: 0.028ms
+[nitro-runtime] request: 0.134ms
+[nitro-runtime] render:before: 0.029ms
+[nitro-runtime] beforeResponse: 0.036ms
+[nitro-runtime] afterResponse: 0.009ms
+[nitro-runtime] request: 0.139ms
+[nitro-runtime] render:before: 0.036ms
+[nitro-runtime] render:route: 0.025ms
+[nuxt-app] page:loading:start: 0.026ms
+[nuxt-app] app:created: 0.645ms
+[nuxt-app] vue:setup: 0.017ms
+[nitro-runtime] request: 0.544ms
+[nitro-runtime] beforeResponse: 0.014ms
+[nitro-runtime] afterResponse: 0.009ms
+[nuxt-app] app:rendered: 0.037ms
+[nitro-runtime] render:html: 0.021ms
+[nitro-runtime] render:response: 0.01ms
+[nitro-runtime] beforeResponse: 0.011ms
+[nitro-runtime] afterResponse: 0.018ms
+[nitro-runtime] request: 0.134ms
+[nitro-runtime] request: 0.074ms
+[nitro-runtime] request: 0.077ms
+[nitro-runtime] request: 0.106ms
+[nitro-runtime] request: 0.108ms
+[nitro-runtime] request: 0.148ms
+[nitro-runtime] beforeResponse: 0.189ms
+[nitro-runtime] beforeResponse: 0.049ms
+[nitro-runtime] beforeResponse: 0.061ms
+[nitro-runtime] afterResponse: 0.034ms
+[nitro-runtime] afterResponse: 0.04ms
+[nitro-runtime] afterResponse: 0.07ms
+[nitro-runtime] request: 0.123ms
+[nitro-runtime] beforeResponse: 0.032ms
+[nitro-runtime] afterResponse: 0.039ms
+[nitro-runtime] beforeResponse: 0.02ms
+[nitro-runtime] request: 0.09ms
+[nitro-runtime] afterResponse: 0.037ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.034ms
+[nitro-runtime] request: 0.082ms
+[nitro-runtime] beforeResponse: 0.042ms
+[nitro-runtime] afterResponse: 0.048ms
+[nitro-runtime] beforeResponse: 0.034ms
+[nitro-runtime] afterResponse: 0.036ms
+[nitro-runtime] request: 0.474ms
+[nitro-runtime] beforeResponse: 0.166ms
+[nitro-runtime] afterResponse: 0.037ms
+[nitro-runtime] request: 0.098ms
+[nitro-runtime] request: 0.105ms
+[nitro-runtime] request: 0.12ms
+[nitro-runtime] beforeResponse: 0.043ms
+[nitro-runtime] afterResponse: 0.033ms
+[nitro-runtime] request: 0.142ms
+[nitro-runtime] beforeResponse: 0.127ms
+[nitro-runtime] request: 0.084ms
+[nitro-runtime] afterResponse: 0.032ms
+[nitro-runtime] beforeResponse: 0.018ms
+[nitro-runtime] request: 0.063ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] beforeResponse: 0.011ms
+[nitro-runtime] afterResponse: 0.032ms
+[nitro-runtime] beforeResponse: 0.04ms
+[nitro-runtime] afterResponse: 0.034ms
+[nitro-runtime] request: 0.072ms
+[nitro-runtime] beforeResponse: 0.028ms
+[nitro-runtime] afterResponse: 0.026ms
+[nitro-runtime] beforeResponse: 0.01ms
+[nitro-runtime] afterResponse: 0.024ms
+[nitro-runtime] request: 0.062ms
+[nitro-runtime] beforeResponse: 0.023ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] beforeResponse: 0.026ms
+[nitro-runtime] afterResponse: 0.016ms
+[nitro-runtime] request: 0.093ms
+[nitro-runtime] request: 0.065ms
+[nitro-runtime] beforeResponse: 0.029ms
+[nitro-runtime] afterResponse: 0.017ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.027ms
+[nitro-runtime] request: 0.057ms
+[nitro-runtime] request: 0.064ms
+[nitro-runtime] beforeResponse: 0.023ms
+[nitro-runtime] afterResponse: 0.021ms
+[nitro-runtime] request: 0.065ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.018ms
+[nitro-runtime] beforeResponse: 0.057ms
+[nitro-runtime] afterResponse: 0.029ms
+[nitro-runtime] request: 0.11ms
+[nitro-runtime] request: 0.101ms
+[nitro-runtime] beforeResponse: 0.034ms
+[nitro-runtime] afterResponse: 0.02ms
+[nitro-runtime] request: 0.039ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.019ms
+[nitro-runtime] request: 0.09ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.021ms
+[nitro-runtime] beforeResponse: 0.024ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] request: 0.06ms
+[nitro-runtime] beforeResponse: 0.039ms
+[nitro-runtime] afterResponse: 0.039ms
+[nitro-runtime] request: 0.069ms
+[nitro-runtime] request: 0.081ms
+[nitro-runtime] beforeResponse: 0.025ms
+[nitro-runtime] afterResponse: 0.021ms
+[nitro-runtime] beforeResponse: 0.012ms
+[nitro-runtime] request: 0.05ms
+[nitro-runtime] afterResponse: 0.028ms
+[nitro-runtime] beforeResponse: 0.028ms
+[nitro-runtime] afterResponse: 0.02ms
+[nitro-runtime] request: 0.114ms
+[nitro-runtime] request: 0.106ms
+[nitro-runtime] beforeResponse: 0.034ms
+[nitro-runtime] afterResponse: 0.018ms
+[nitro-runtime] request: 0.043ms
+[nitro-runtime] beforeResponse: 0.024ms
+[nitro-runtime] afterResponse: 0.018ms
+[nitro-runtime] beforeResponse: 0.015ms
+[nitro-runtime] afterResponse: 0.03ms
+[nitro-runtime] request: 0.116ms
+[nitro-runtime] request: 0.139ms
+[nitro-runtime] beforeResponse: 0.042ms
+[nitro-runtime] afterResponse: 0.035ms
+[nitro-runtime] request: 0.085ms
+[nitro-runtime] beforeResponse: 0.042ms
+[nitro-runtime] afterResponse: 0.043ms
+[nitro-runtime] beforeResponse: 0.042ms
+[nitro-runtime] afterResponse: 0.048ms
+[nitro-runtime] request: 0.082ms
+[nitro-runtime] request: 0.136ms
+[nitro-runtime] beforeResponse: 0.045ms
+[nitro-runtime] afterResponse: 0.051ms
+[nitro-runtime] request: 0.135ms
+[nitro-runtime] beforeResponse: 0.036ms
+[nitro-runtime] afterResponse: 0.035ms
+[nitro-runtime] beforeResponse: 0.038ms
+[nitro-runtime] afterResponse: 0.046ms
+[nitro-runtime] request: 0.152ms
+[nitro-runtime] request: 0.136ms
+[nitro-runtime] beforeResponse: 0.037ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] request: 0.129ms
+[nitro-runtime] beforeResponse: 0.027ms
+[nitro-runtime] afterResponse: 0.026ms
+[nitro-runtime] request: 0.095ms
+[nitro-runtime] beforeResponse: 0.047ms
+[nitro-runtime] afterResponse: 0.034ms
+[nitro-runtime] beforeResponse: 0.03ms
+[nitro-runtime] afterResponse: 0.034ms
+[nitro-runtime] request: 0.158ms
+[nitro-runtime] beforeResponse: 0.038ms
+[nitro-runtime] afterResponse: 0.019ms
+[nitro-runtime] request: 0.065ms
+[nitro-runtime] beforeResponse: 0.043ms
+[nitro-runtime] afterResponse: 0.039ms
+[nitro-runtime] request: 0.111ms
+[nitro-runtime] request: 0.198ms
+[nitro-runtime] request: 0.22ms
+[nitro-runtime] beforeResponse: 0.059ms
+[nitro-runtime] afterResponse: 0.049ms
+[nitro-runtime] request: 0.117ms
+[nitro-runtime] beforeResponse: 0.035ms
+[nitro-runtime] afterResponse: 0.039ms
+[nitro-runtime] beforeResponse: 0.028ms
+[nitro-runtime] afterResponse: 0.033ms
+[nitro-runtime] beforeResponse: 0.037ms
+[nitro-runtime] afterResponse: 0.032ms
+[nitro-runtime] request: 0.068ms
+[nitro-runtime] beforeResponse: 0.045ms
+[nitro-runtime] afterResponse: 0.041ms
+[nitro-runtime] request: 0.083ms
+[nitro-runtime] request: 0.136ms
+[nitro-runtime] beforeResponse: 0.047ms
+[nitro-runtime] afterResponse: 0.037ms
+[nitro-runtime] request: 0.121ms
+[nitro-runtime] beforeResponse: 0.045ms
+[nitro-runtime] afterResponse: 0.045ms
+[nitro-runtime] request: 0.087ms
+[nitro-runtime] beforeResponse: 0.176ms
+[nitro-runtime] afterResponse: 0.038ms
+[nitro-runtime] request: 0.068ms
+[nitro-runtime] beforeResponse: 0.035ms
+[nitro-runtime] afterResponse: 0.046ms
+[nitro-runtime] request: 0.124ms
+[nitro-runtime] beforeResponse: 0.05ms
+[nitro-runtime] afterResponse: 0.042ms
+[nitro-runtime] request: 0.094ms
+[nitro-runtime] beforeResponse: 0.03ms
+[nitro-runtime] afterResponse: 0.045ms
+[nitro-runtime] beforeResponse: 0.035ms
+[nitro-runtime] afterResponse: 0.04ms
+[nitro-runtime] request: 0.129ms
+[nitro-runtime] request: 0.093ms
+[nitro-runtime] beforeResponse: 0.038ms
+[nitro-runtime] afterResponse: 0.039ms
+[nitro-runtime] beforeResponse: 0.072ms
+[nitro-runtime] afterResponse: 0.054ms
+[nitro-runtime] request: 0.092ms
+[nitro-runtime] render:before: 0.014ms
+[nitro-runtime] beforeResponse: 0.017ms
+[nitro-runtime] afterResponse: 0.011ms
+[nitro-runtime] request: 0.291ms
+[nitro-runtime] request: 0.142ms
+[nitro-runtime] request: 0.088ms
+[nitro-runtime] beforeResponse: 0.06ms
+[nitro-runtime] afterResponse: 0.033ms
+[nitro-runtime] beforeResponse: 0.013ms
+[nitro-runtime] afterResponse: 0.033ms
+[nitro-runtime] beforeResponse: 0.042ms
+[nitro-runtime] afterResponse: 0.039ms
+[nitro-runtime] request: 0.121ms
+[nitro-runtime] beforeResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.013ms
+[nitro-runtime] request: 0.064ms
+[nitro-runtime] render:before: 0.01ms
+[nitro-runtime] render:route: 0.011ms
+[nuxt-app] page:loading:start: 0.009ms
+[nuxt-app] app:created: 0.331ms
+[nuxt-app] vue:setup: 0.005ms
+[nuxt-app] app:rendered: 0.021ms
+[nitro-runtime] error: 0.053ms
+[nitro-runtime] request: 0.096ms
+[nitro-runtime] render:before: 0.023ms
+[nitro-runtime] render:route: 0.011ms
+[nuxt-app] page:loading:start: 0.011ms
+[nuxt-app] app:created: 0.28ms
+[nuxt-app] vue:setup: 0.005ms
+[nuxt-app] app:rendered: 0.022ms
+[nitro-runtime] error: 0.042ms
+[nitro-runtime] request: 0.121ms
+[nitro-runtime] render:before: 0.024ms
+[nitro-runtime] beforeResponse: 0.03ms
+[nitro-runtime] afterResponse: 0.014ms
+[nitro-runtime] request: 0.108ms
+[nitro-runtime] render:before: 0.025ms
+[nitro-runtime] render:route: 0.036ms
+[nuxt-app] page:loading:start: 0.009ms
+[nuxt-app] app:created: 0.343ms
+[nuxt-app] vue:setup: 0.006ms
+[nitro-runtime] request: 0.48ms
+[nitro-runtime] beforeResponse: 0.02ms
+[nitro-runtime] afterResponse: 0.01ms
+[nuxt-app] app:rendered: 0.043ms
+[nitro-runtime] render:html: 0.021ms
+[nitro-runtime] render:response: 0.015ms
+[nitro-runtime] beforeResponse: 0.011ms
+[nitro-runtime] afterResponse: 0.014ms
+[nitro-runtime] request: 0.138ms
+[nitro-runtime] request: 0.076ms
+[nitro-runtime] request: 0.081ms
+[nitro-runtime] request: 0.098ms
+[nitro-runtime] request: 0.112ms
+[nitro-runtime] request: 0.077ms
+[nitro-runtime] beforeResponse: 0.022ms
+[nitro-runtime] beforeResponse: 0.01ms
+[nitro-runtime] beforeResponse: 0.01ms
+[nitro-runtime] afterResponse: 0.021ms
+[nitro-runtime] afterResponse: 0.029ms
+[nitro-runtime] afterResponse: 0.02ms
+[nitro-runtime] beforeResponse: 0.017ms
+[nitro-runtime] afterResponse: 0.026ms
+[nitro-runtime] request: 0.082ms
+[nitro-runtime] beforeResponse: 0.029ms
+[nitro-runtime] afterResponse: 0.058ms
+[nitro-runtime] beforeResponse: 0.019ms
+[nitro-runtime] afterResponse: 0.036ms
+[nitro-runtime] beforeResponse: 0.036ms
+[nitro-runtime] afterResponse: 0.019ms
+[nitro-runtime] request: 0.047ms
+[nitro-runtime] request: 0.134ms
+[nitro-runtime] beforeResponse: 0.048ms
+[nitro-runtime] afterResponse: 0.035ms
+[nitro-runtime] request: 0.102ms
+[nitro-runtime] beforeResponse: 0.047ms
+[nitro-runtime] afterResponse: 0.037ms
+[nitro-runtime] beforeResponse: 0.023ms
+[nitro-runtime] afterResponse: 0.021ms
+[nitro-runtime] request: 0.097ms
+[nitro-runtime] beforeResponse: 0.087ms
+[nitro-runtime] afterResponse: 0.044ms
+[nitro-runtime] request: 0.133ms
+[nitro-runtime] request: 0.09ms
+[nitro-runtime] request: 0.117ms
+[nitro-runtime] request: 0.099ms
+[nitro-runtime] beforeResponse: 0.036ms
+[nitro-runtime] beforeResponse: 0.013ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] afterResponse: 0.036ms
+[nitro-runtime] beforeResponse: 0.01ms
+[nitro-runtime] afterResponse: 0.032ms
+[nitro-runtime] beforeResponse: 0.035ms
+[nitro-runtime] afterResponse: 0.057ms
+[nitro-runtime] request: 0.107ms
+[nitro-runtime] render:before: 0.014ms
+[nitro-runtime] beforeResponse: 0.016ms
+[nitro-runtime] afterResponse: 0.008ms
+[nitro-runtime] request: 0.115ms
+[nitro-runtime] request: 0.106ms
+[nitro-runtime] request: 0.126ms
+[nitro-runtime] beforeResponse: 0.03ms
+[nitro-runtime] afterResponse: 0.023ms
+[nitro-runtime] beforeResponse: 0.01ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] beforeResponse: 0.02ms
+[nitro-runtime] afterResponse: 0.025ms
+[nitro-runtime] request: 0.117ms
+[nitro-runtime] beforeResponse: 0.024ms
+[nitro-runtime] afterResponse: 0.028ms
+[nitro-runtime] request: 0.099ms
+[nitro-runtime] render:before: 0.021ms
+[nitro-runtime] render:route: 0.019ms
+[nuxt-app] page:loading:start: 0.01ms
+[nuxt-app] app:created: 0.414ms
+[nuxt-app] vue:setup: 0.005ms
+[nuxt-app] app:rendered: 0.022ms
+[nitro-runtime] error: 0.038ms
+[nitro-runtime] request: 0.099ms
+[nitro-runtime] render:before: 0.021ms
+[nitro-runtime] render:route: 0.017ms
+[nuxt-app] page:loading:start: 0.01ms
+[nuxt-app] app:created: 0.261ms
+[nuxt-app] vue:setup: 0.005ms
+[nuxt-app] app:rendered: 0.022ms
+[nitro-runtime] error: 0.036ms
+[nitro-runtime] request: 0.139ms
+[nitro-runtime] render:before: 0.031ms
+[nitro-runtime] beforeResponse: 0.033ms
+[nitro-runtime] afterResponse: 0.014ms

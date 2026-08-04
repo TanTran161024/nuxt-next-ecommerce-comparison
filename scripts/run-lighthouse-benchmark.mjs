@@ -5,6 +5,10 @@ import { appendCsv, ensureDirectory, experimentRoot, isPlaceholder, now, readCon
 import { lighthouseConfigurationErrors, lighthouseFlags } from './lighthouse-benchmark-options.mjs'
 
 const config = readConfig()
+const pilotDirectory = process.argv.includes('--pilot-02') ? 'pilot-02' : process.argv.includes('--pilot') ? 'pilot' : undefined
+const pilot = Boolean(pilotDirectory)
+const outputRoot = pilot ? resolve(experimentRoot, pilotDirectory) : experimentRoot
+const runsPerCase = pilot ? 1 : config.runsPerCase
 const pending = Object.entries(config.lighthouse).filter(([, value]) => isPlaceholder(value)).map(([key]) => key)
 if (pending.length) throw new Error(`Lighthouse is blocked until confirmed: ${pending.join(', ')}`)
 const configurationErrors = lighthouseConfigurationErrors(config.lighthouse)
@@ -18,7 +22,7 @@ const localLighthouse = [
 if (lighthouseCheck.exitCode !== 0 && !localLighthouse) throw new Error('Lighthouse CLI not found locally or on PATH. It was not installed automatically.')
 const lighthouseExecutable = localLighthouse ? `"${localLighthouse}"` : 'lighthouse'
 
-const portInUse = async (port) => runCommand({ command: process.platform === 'win32' ? `netstat -ano | findstr :${port}` : `lsof -i :${port}` })
+const portInUse = async (port) => runCommand({ command: process.platform === 'win32' ? `netstat -ano -p tcp | findstr /R /C:":${port} .*LISTENING"` : `lsof -iTCP:${port} -sTCP:LISTEN` })
 const waitForUrl = async (url, timeoutMs = 30000) => {
   const until = Date.now() + timeoutMs
   while (Date.now() < until) {
@@ -32,6 +36,14 @@ const stopServer = async (child) => {
   if (process.platform === 'win32') await runCommand({ command: `taskkill /pid ${child.pid} /T /F` })
   else child.kill('SIGTERM')
 }
+const waitForPortFree = async (port, timeoutMs = 10000) => {
+  const until = Date.now() + timeoutMs
+  while (Date.now() < until) {
+    if ((await portInUse(port)).exitCode !== 0) return
+    await new Promise((resolvePromise) => setTimeout(resolvePromise, 250))
+  }
+  throw new Error(`Port ${port} was still occupied after stopping the server.`)
+}
 const reservePath = (directory, baseName, extension) => {
   let candidate = resolve(directory, `${baseName}.${extension}`)
   if (!existsSync(candidate)) return candidate
@@ -39,9 +51,9 @@ const reservePath = (directory, baseName, extension) => {
   return candidate
 }
 const headers = ['framework', 'page', 'run', 'performance', 'accessibility', 'best_practices', 'seo', 'fcp_ms', 'lcp_ms', 'tbt_ms', 'cls', 'measured_at', 'notes']
-const resultCsv = resolve(experimentRoot, 'raw-data/lighthouse-results.csv')
+const resultCsv = resolve(outputRoot, 'raw-data/lighthouse-results.csv')
 
-for (let run = 1; run <= config.runsPerCase; run += 1) {
+for (let run = 1; run <= runsPerCase; run += 1) {
   for (const framework of ['nuxt', 'next']) {
     const item = config.frameworks[framework]
     const occupied = await portInUse(item.port)
@@ -55,12 +67,12 @@ for (let run = 1; run <= config.runsPerCase; run += 1) {
       await waitForUrl(`http://127.0.0.1:${item.port}/`)
       for (const page of config.pages) {
         const baseName = `${page.name}-run-${String(run).padStart(2, '0')}`
-        const reportDirectory = resolve(experimentRoot, 'lighthouse', framework)
+        const reportDirectory = resolve(outputRoot, 'lighthouse', framework)
         ensureDirectory(reportDirectory)
         const reportBaseName = existsSync(resolve(reportDirectory, `${baseName}.report.json`)) ? `${baseName}-${Date.now()}` : baseName
         const basePath = resolve(reportDirectory, reportBaseName)
-        const profileDirectory = mkdtempSync(resolve(experimentRoot, '.lighthouse-profile-'))
-        const command = `${lighthouseExecutable} http://127.0.0.1:${item.port}${page.path} ${lighthouseFlags(config.lighthouse, profileDirectory).join(' ')} --output json --output html --output-path "${basePath}"`
+        const profileDirectory = mkdtempSync(resolve(outputRoot, '.lighthouse-profile-'))
+        const command = `${lighthouseExecutable} http://127.0.0.1:${item.port}${page.path} ${lighthouseFlags(config.lighthouse, profileDirectory).join(' ')} --output json --output html --output-path="${basePath}"`
         const measured = await runCommand({ command })
         rmSync(profileDirectory, { recursive: true, force: true })
         const logPath = reservePath(reportDirectory, `${baseName}.log`, 'txt')
@@ -88,7 +100,8 @@ for (let run = 1; run <= config.runsPerCase; run += 1) {
       }
     } finally {
       await stopServer(child)
-      writeText(resolve(experimentRoot, 'lighthouse', framework, `server-run-${String(run).padStart(2, '0')}.log`), serverLog)
+      writeText(resolve(outputRoot, 'lighthouse', framework, `server-run-${String(run).padStart(2, '0')}.log`), serverLog)
+      await waitForPortFree(item.port)
     }
   }
 }

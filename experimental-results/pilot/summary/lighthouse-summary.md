@@ -1,0 +1,14 @@
+# Lighthouse summary
+
+Source: C:\Users\HP\Desktop\nuxt-next-ecommerce-comparison\experimental-results\pilot\raw-data\lighthouse-results.csv
+
+Values are descriptive only; this file does not rank frameworks.
+
+Không đủ số lần đo để tính độ lệch chuẩn mẫu.
+
+```csv
+framework,page,runs,performance_mean,performance_sample_stddev,performance_median,performance_min,performance_max,accessibility_mean,accessibility_sample_stddev,accessibility_median,accessibility_min,accessibility_max,best_practices_mean,best_practices_sample_stddev,best_practices_median,best_practices_min,best_practices_max,seo_mean,seo_sample_stddev,seo_median,seo_min,seo_max,fcp_ms_mean,fcp_ms_sample_stddev,fcp_ms_median,fcp_ms_min,fcp_ms_max,lcp_ms_mean,lcp_ms_sample_stddev,lcp_ms_median,lcp_ms_min,lcp_ms_max,tbt_ms_mean,tbt_ms_sample_stddev,tbt_ms_median,tbt_ms_min,tbt_ms_max,cls_mean,cls_sample_stddev,cls_median,cls_min,cls_max
+nuxt,home,1,99,,99,99,99,90,,90,90,90,100,,100,100,100,100,,100,100,100,618.4984835137707,,618.4984835137707,618.4984835137707,618.4984835137707,958.4984835137707,,958.4984835137707,958.4984835137707,958.4984835137707,0,,0,0,0,0,,0,0,0
+nuxt,products,1,98,,98,98,98,91,,91,91,91,100,,100,100,100,100,,100,100,100,665.6677654968861,,665.6677654968861,665.6677654968861,665.6677654968861,1126.0016482453295,,1126.0016482453295,1126.0016482453295,1126.0016482453295,0,,0,0,0,0,,0,0,0
+nuxt,product-detail,1,99,,99,99,99,89,,89,89,89,100,,100,100,100,100,,100,100,100,575.6544,,575.6544,575.6544,575.6544,815.6543999999999,,815.6543999999999,815.6543999999999,815.6543999999999,0,,0,0,0,0,,0,0,0
+```
