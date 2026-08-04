@@ -1,3 +1,0 @@
---output-path ("C:\Users\HP\Desktop\nuxt-next-ecommerce-comparison\experimental-results\pilot\lighthouse\nuxt\home-run-01") cannot be written to
-
-Specify --help for available options
